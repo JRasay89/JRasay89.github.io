@@ -42,8 +42,7 @@ body{
     background-color: #AC2832;
 }
 
-.dropdown-menu {
-
+.navbar-default .dropdown-menu {
     background-image: url("../images/background/noisy_net_@2X.png");
 }
 
@@ -58,7 +57,10 @@ body{
     background-color: #AC2832;
 }
 
-
+.open > .dropdown-menu li > a:hover{
+    background-color: #AC2832;
+    color:#FFFFFF;
+}
 
 /*********************************************
 					Index Page
@@ -84,12 +86,7 @@ p > .home_button:active {
 	color: #FFFFFF;
 }
 
-.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover
-{
-	color: #fff;
-	background-color: #161617; 
-	border-color: #494F57; 
-}
+
 /**********************************************
 				Main Courses Page
 ***********************************************/
