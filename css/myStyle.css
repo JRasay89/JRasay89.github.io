@@ -1,0 +1,176 @@
+/*************************
+		General
+**************************/
+body, html {
+	height: 100%;
+	width:	100%;
+}
+body{
+	background-image: url("../images/background/blizzard_@2X.png");
+}
+
+/*********************************************
+				Navbar
+*********************************************/
+.navbar {
+	padding-top: 25px;
+	border-radius: 0px;
+	background-image: url("../images/background/noisy_net_@2X.png");
+	border-color: #919191;
+	border-top: none;
+	
+}
+.navbar-nav {
+	margin: -12px;
+}
+
+.navbar .navbar-nav > li > a {
+	color: #CCCCCC;
+	font-size: 20px;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+    background-color: #AC2832;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #AC2832;
+}
+
+.dropdown-menu {
+
+    background-image: url("../images/background/noisy_net_@2X.png");
+}
+
+.dropdown-menu  > li > a{
+     color: #CCCCCC;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:active,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #FFFFFF;
+    background-color: #AC2832;
+}
+
+
+
+/*********************************************
+					Index Page
+*********************************************/
+#index_jumbotron_title {
+	margin-top: 100px;
+	color: #191919;
+	background:transparent;
+	
+}
+
+p > .home_button {
+	border-radius: 0px;
+	background-color: #AC2832;
+	color: #FFFFFF;
+}
+
+p > .home_button:hover,
+p > .home_button:focus,
+p > .home_button:active {
+	box-shadow: none;
+	background-color: #AC2832;
+	color: #FFFFFF;
+}
+
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover
+{
+	color: #fff;
+	background-color: #161617; 
+	border-color: #494F57; 
+}
+/**********************************************
+				Main Courses Page
+***********************************************/
+#main_courses_jumbotron_title {
+	background:transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+}
+
+.course_title, .course_description {
+	text-align: center;
+	color: #191919;
+}
+
+.course_view_detail_btn {
+	text-align: center;
+}
+
+.course_list{
+	border-color: #919191;
+	border-width: 1px;
+	border-style: none none solid none;
+}
+/**********************************************
+				Courses Page
+***********************************************/
+#courses_jumbotron_title {
+	background: transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+	
+}
+.courses_header {
+	border-color: #919191;
+	border-width: 1px;
+	border-style: none none solid none;
+}
+/**********************************************
+				Main Projects Page
+***********************************************/
+#projects_jumbotron_title {
+	background:transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+}
+/**********************************************
+					About Me Page
+***********************************************/
+#aboutme_jumbotron_title {
+	background:transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+}
+
+.aboutme_description {
+	
+	font-size: 20px;
+	color: #191919;
+}
+.aboutme_title {
+	color: #E6E6E6;
+	text-align: center;
+}
+.aboutme_education, .aboutme_courses, .aboutme_languages_database, .aboutme_technologies {
+	margin: auto;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: 10px 10px 5px #888888;
+    background-color: #5077BE;
+}
+
+.aboutme_education_row{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.aboutme_courses_row, .aboutme_graph_row, .aboutme_othertech_row  {
+	margin-top: 25px;
+}

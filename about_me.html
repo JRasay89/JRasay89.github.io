@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Custom Icons -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="css/myStyle.css">
+		
+		<!-- My JS -->
+		<script src="js/myGraph.js"></script>
+		<script src="js/myNavbar.js"></script>
+		
+		<title>About Me page</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-fixed-top navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+				</a>					
+			</div>
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li id="home_menu">
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<!-- Courses Drop Down Menu -->
+					<li class="dropdown" id="coursework_menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Coursework <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">
+									ICS 111: Intro Comp Science I - Java
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									ICS 211: Intro Comp Science II - Java
+								</a>
+							</li>
+							<li>
+								<a href="courses.html">
+									View All
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!-- End of Courses Drop Down Menu -->
+					<!-- Projects Drop Down Menu-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Projects <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Android Chat I</a>
+							</li>
+							<li>
+								<a href="projects.html">View All</a>
+							</li>
+						</ul>
+					</li>
+					<!-- End of Projects Drop Down Menu -->
+					<!-- About Me Menu -->
+					<li id="about_me_menu">
+						<a href="about_me.html">About Me</a>
+					</li>
+					<!-- End of About Me Menu -->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
+					</li>
+					<li>
+						<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+		<!-- End of Navbar -->
+		</nav>
+		<!-- Main Content -->
+		<div class="jumbotron" id="aboutme_jumbotron_title">
+			<h1 style="text-align:center">About Me</h1>
+		</div>
+		<div class="container main_container" id="main_body">
+			<!-- About Me And Profile Picture -->
+			<div class="row page-header">
+				<!-- About Me -->
+				<div class="col-sm-8">
+					<h4 class="aboutme_description">
+					 I graduated from the University of Hawaii in May 2014 with a Bachelors of Science degree in Computer Science. 
+					 My education primarily consisted of courses that focused on the Java Programming Language, but I have also taken courses 
+					 that gave me experience using other languages and technologies such as C, C++, JavaScript, PHP, HTML and CSS. 
+					 Programming is something that I enjoy because you're always learning, and making something and seeing them work for the first time 
+					 is a great feeling. It is also a great feeling to be able to program applications that can be of use to others.
+					</h4>
+				</div>
+				<!-- Profile Picture -->
+				<div class="col-sm-4">
+					<p class="profile_picture"><img src="images/myProfilePicture.JPG"/></p>
+				</div>
+			</div>
+			<!-- Education-->
+			<div class="row page-header">
+				<div class="col-lg-12">
+					<h2 class="aboutme_title aboutme_education"> Education </h2>
+					<div class="row aboutme_education_row"> 
+						<!-- University Of Hawaii -->
+						<div class="row uhm_row">
+							<div class="col-lg-12">
+								<p><img src="images/school_logo/manoa_logo.png" alt="logo" /></p>
+								<p><a href="http://manoa.hawaii.edu/">University Of Hawaii</a></p>
+								<p><a href="http://manoa.hawaii.edu/">Honolulu, Hi</a></p>
+								<p>August 2011 - May 2014</p>
+								<p>Bachelors of Science in Computer Science</p>
+								<p>Overall GPA 3.52 / 4.0</p>
+							</div>
+						</div>
+						<!-- Honolulu Community College -->
+						<div class="row hcc_row">
+							<div class="col-lg-12">
+								<p><img src="images/school_logo/hcc_logo.png" alt="logo"/></p>
+								<p><a href="http://www.honolulu.hawaii.edu/">Honolulu Community College</a></p>
+								<p><a href="http://manoa.hawaii.edu/">Honolulu, Hi</a></p>
+								<p>August 2007 - May 2011</p>
+								<p>Associates of Science in Computing, Electronics & Networking Technology</p>
+								<p>Overall GPA 3.32 / 4.0</p>
+							</div>
+						</div>
+						<!-- Wallace Rider Farrington High School -->
+						<div class="row fhs_row">
+							<div class="col-lg-12">
+								<p><img src="images/school_logo/fhs_logo.png" alt="logo" /></p>
+								<p><a href="http://farringtonhighschool.org/">Wallace Rider Farrington High School</a></p>
+								<p><a href="http://manoa.hawaii.edu/">Honolulu, Hi</a></p>
+								<p>August 2003 - June 2007</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of Educations -->
+			<!-- Courses -->
+			<div class="row page-header">
+				<div class="col-sm-12">
+					<h2 class="aboutme_title aboutme_courses" style="text-align:center"> Courses </h2>
+					<div class="row aboutme_courses_row">
+						<div class="col-sm-6">
+							<ul>
+								<li>
+									<a href="my_courses/ics111.html">Intro to Computer Science I - Java</a>
+								</li>
+								<li>
+								Intro to Comp Science II - Java
+								</li>
+								<li>
+								Program Structure - C & C++
+								</li>
+								<li>
+								Data Storage & Retrieval
+								</li>
+								<li>
+								Algorithms
+								</li>
+								<li>
+								Programming Language Theory
+								</li>
+								<li>
+								Software Engineering I
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<ul>
+								<li>
+									<a href="#">Software Engineering II</a>
+								</li>
+								<li>
+								Operating Systems
+								</li>
+								<li>
+								Design for Mobile Devices
+								</li>
+								<li>
+								Introduction to Scripting
+								</li>
+								<li>
+								Intro to Programming for the Web
+								</li>
+								<li>
+								Web Design and Management
+								</li>
+								<li>
+								Data Networks
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End of Courses -->
+			<!-- Technology Summary -->
+			<div class="row page-header">
+				<div class="col-sm-12">
+					<h2 class="aboutme_title aboutme_languages_database" style="text-align:center"> Programming Languages/Database </h2>
+					<div class="row aboutme_graph_row">
+						<div class="col-sm-12">
+							<canvas id="graph" width="1100" height="500">   
+							</canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Other Technologies -->
+			<div class="row page-header">
+				<div class="col-sm-12">
+					<h2 class="aboutme_title aboutme_technologies" style="text-align:center"> Other Technologies </h2>
+					<div class="row aboutme_othertech_row">
+						<div class="col-sm-12">
+							<ul>
+								<li>
+									Eclipse IDE, Visual Studio, Android Studio
+								</li>
+								<li>
+									Microsoft Word, PowerPoint, Excel
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
