@@ -99,6 +99,7 @@ p > .home_button:active {
 
 .course_list_row {
 	display: flex;
+	color: #FFFFFF;
 	border-color: #919191;
 	border-width: 1px;
 	border-style: none none solid none;
@@ -112,7 +113,6 @@ p > .home_button:active {
 
 }
 .indiv_course_div * {
-	color: #FFFFFF;
 	clear: both;
 }
 
@@ -125,7 +125,7 @@ p > .home_button:active {
 }
 
 /*******************************
-			Ribbon Title
+		Course Ribbon Title
 ********************************/
 .course_number_ribbon {
 	position: relative;
@@ -179,6 +179,66 @@ p > .home_button:active {
 	margin-bottom: -100px;
 	color: #191919;
 }
+
+.projects_row {
+	display: flex;
+	color: #FFF;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: none none solid none;
+}
+
+.indiv_projects_div {
+	position: relative;
+	flex: 1;
+	margin: 0 20px;
+    background-color: #2E8B57;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+.indiv_projects_div * {
+	clear: both;
+}
+
+
+/*******************************
+		Project Ribbon Title
+********************************/
+.project_title_ribbon {
+	text-align: center;
+	position: relative;
+	margin: 10px -15px;
+	background: #00C87B;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.project_title_ribbon:before {
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	content: "";
+	border-bottom: 10px solid transparent;
+	border-right: 15px solid #005031;
+	
+}
+
+.project_title_ribbon:after {
+	display:block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+	content: "";
+	border-bottom: 10px solid transparent;
+	border-left: 15px solid #005031;
+}
+
+
 /******************************************************************
 					About Me Page
 *******************************************************************/
