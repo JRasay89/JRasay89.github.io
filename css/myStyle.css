@@ -1,6 +1,6 @@
-/*************************
+/******************************************************************
 		General
-**************************/
+*******************************************************************/
 body, html {
 	height: 100%;
 	width:	100%;
@@ -9,9 +9,9 @@ body{
 	background-image: url("../images/background/blizzard_@2X.png");
 }
 
-/*********************************************
+/******************************************************************
 				Navbar
-*********************************************/
+*******************************************************************/
 .navbar {
 	padding-top: 25px;
 	border-radius: 0px;
@@ -87,9 +87,9 @@ p > .home_button:active {
 }
 
 
-/**********************************************
+/******************************************************************
 				Main Courses Page
-***********************************************/
+*******************************************************************/
 #main_courses_jumbotron_title {
 	background:transparent;
 	padding: 100px;
@@ -97,23 +97,67 @@ p > .home_button:active {
 	color: #191919;
 }
 
-.course_title, .course_description {
-	text-align: center;
-	color: #191919;
-}
-
-.course_view_detail_btn {
-	text-align: center;
-}
-
-.course_list{
+.course_list_row {
+	display: flex;
 	border-color: #919191;
 	border-width: 1px;
 	border-style: none none solid none;
 }
-/**********************************************
-				Courses Page
-***********************************************/
+
+.indiv_course_div {
+	flex: 1;
+	margin: 10px;
+    background-color: #AC2832;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+.indiv_course_div * {
+	color: #FFFFFF;
+	clear: both;
+}
+
+.course_description > a {
+	color: #78BCFF;
+}
+.course_description > a:hover ,
+.course_description > a:active {
+	color: #E4F2FF;
+}
+
+/*******************************
+			Ribbon Title
+********************************/
+.course_number_ribbon {
+	position: relative;
+	background: #E34062;
+	margin: 10px 0 10px;
+	margin-left: -26px;
+	padding: 5px 10px;
+	float: left;
+	text-transform: uppercase;
+	border: 1px solid rgba(0,0,0,.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+
+}
+.course_number {
+	margin: 0 12px;
+}
+
+.course_number_ribbon::before {
+	display:block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	content: "";
+	border-bottom: 15px solid transparent;
+	border-right: 12px solid #722031;
+}
+
+/******************************************************************
+							Courses Page
+*******************************************************************/
 #courses_jumbotron_title {
 	background: transparent;
 	padding: 100px;
@@ -126,18 +170,18 @@ p > .home_button:active {
 	border-width: 1px;
 	border-style: none none solid none;
 }
-/**********************************************
+/******************************************************************
 				Main Projects Page
-***********************************************/
+*******************************************************************/
 #projects_jumbotron_title {
 	background:transparent;
 	padding: 100px;
 	margin-bottom: -100px;
 	color: #191919;
 }
-/**********************************************
+/******************************************************************
 					About Me Page
-***********************************************/
+*******************************************************************/
 #aboutme_jumbotron_title {
 	background:transparent;
 	padding: 100px;
