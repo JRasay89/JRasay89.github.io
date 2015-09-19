@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Custom Icons -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="../css/myStyle.css">
+		<script src="../js/myNavbar.js"></script>
+		
+		<title>Coursework page</title>	
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-fixed-top navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">
+				</a>					
+			</div>
+			<div class="container">
+				<ul class="nav navbar-nav" id="menu_nav">
+					<li id="home_menu">
+						<a href="../index.html">
+							Home
+						</a>
+					</li>
+					<!-- Courses Drop Down Menu -->
+					<li class="dropdown" id="coursework_menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Coursework <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="../my_courses/ics111.html">
+									ICS 111: Intro Comp Science I - Java
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									ICS 211: Intro Comp Science II - Java
+								</a>
+							</li>
+							<li>
+								<a href="../courses.html">
+									View All
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!-- End of Courses Drop Down Menu -->
+					<!-- Projects Drop Down Menu-->
+					<li class="dropdown" id="projects_menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Projects <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Android Chat I</a>
+							</li>
+							<li>
+								<a href="../projects.html">View All</a>
+							</li>
+						</ul>
+					</li>
+					<!-- End of Projects Drop Down Menu -->
+					<!-- About Me Menu -->
+					<li id="about_me_menu">
+						<a href="../about_me.html">
+							About Me
+						</a>
+					</li>
+					<!-- End of About Me Menu -->
+				</ul>
+				<!-- Contact and Social Navbar -->
+				<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
+					<li>
+						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
+					</li>
+					<li>
+						<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+		<!-- End of Navbar -->
+		</nav>
+		<!-- Main Content -->
+		<div class="container">
+			<div class="jumbotron" id="courses_jumbotron_title">
+				<h2 style="text-align:center">ICS 451 <br> Data Networks</h2>
+				<p style="text-align:center">
+					University Of Hawaii Manoa <br>
+					Spring 2014 <br>
+					Professor: Ravi Narayan
+				</p>
+			</div>
+			<div class="container main_container">
+				<div class="row page-header courses_header">
+					<h2 class="description_title"> Description </h2>
+					<p>
+					Network analysis, architecture, digital signal analysis and design; circuit switching, packet switching, 
+					packet broadcasting; protocols and standards; local area networks; satellite networks; ALOHA channels; examples.
+					</p>
+				</div>
+				<div class="row page-header courses_header">
+					<h2 class="experience_gained_title"> Experience Gained </h2>
+					<ul>
+						<li>
+							OSI layer model (Application layer, TCP layer, Network layer)
+						</li>
+						<li>
+							Socket Programming (Java and C)
+						</li>
+					</ul>
+				</div>
+				<!-- Textbooks -->
+				<div class="row page-header courses_header">
+					<div class="col-sm-12 col-lg-12">
+						<h2 class="textbooks_title"> Textbooks </h2>
+						<div class = "row">
+							<div class="col-sm-8 col-lg-8">
+								<div class="col-sm-4 col-lg-2">
+									<a href="http://www.amazon.com/Computer-Networking-Top-Down-Approach-6th/dp/0132856204/ref=sr_1_1?ie=UTF8&qid=1442695296&sr=8-1&keywords=Computer+networking+a+top">
+										<img src="../images/books/ICS451-Book.png"/>
+									</a>
+								</div>
+								<div class="col-sm-8 col-lg-5">
+									Computer Networking: A Top-Down Approach, 6th Edition <br>
+									James F. Kurose <br>
+									Pearson <br>
+									ISBN: 978-0132856201
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of textbooks -->
+				<!-- Programming Assignments -->
+				<div class="row page-header courses_header">
+					<div class="col-sm-12 col-lg-12">
+						<h2 class="programming_assignments_title"> Programming Assignments </h2>
+						<!-- First row of assignments list -->
+						<div class="row assignments_row">
+							<!-- Daytime Server -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="row">
+									<div class="col-sm-4 col-lg-3">
+										<img src="../images/icons/cpp_icon.png"/>
+									</div>
+									<div class="col-sm-8 col-lg-9">
+										<h3>
+											Daytime Server
+										</h3>
+										<p><a href="https://www.dropbox.com/s/ww3aq5x2xmedp8p/Daytime%20Server.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_451/Daytime%20Server">View</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- Multithreaded Client Server -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="row">
+									<div class="col-sm-4 col-lg-3">
+										<img src="../images/icons/cpp_icon.png" />
+									</div>
+									<div class="col-sm-8 col-lg-9">
+										<h3>
+											Multithreaded Client Server
+										</h3>
+										<p><a href="https://www.dropbox.com/s/8mhrhzu0zxt0nd5/Multithreaded%20Client%20Server.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_451/Multi%20Threaded%20Client%20Server">View</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of first row -->
+						<!-- Second row of assignments list -->
+						<div class="row assignments_row">
+							<!-- Multithreaded TCP simulation -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="row">
+									<div class="col-sm-4 col-lg-3">
+										<img src="../images/icons/cpp_icon.png"/>
+									</div>
+									<div class="col-sm-8 col-lg-9">
+										<h3>
+											Multithreaded TCP simulation
+										</h3>
+										<p><a href="https://www.dropbox.com/s/wg2x8bmimq6037m/Multithreaded%20TCP%20simulation.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_451/Multithread%20TCP%20simulation">View</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- TCP File Reader -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="row">
+									<div class="col-sm-4 col-lg-3">
+										<img src="../images/icons/cpp_icon.png" />
+									</div>
+									<div class="col-sm-8 col-lg-9">
+										<h3>
+											TCP File Reader
+										</h3>
+										<p><a href="https://www.dropbox.com/s/okwukul27fv2r8y/TCP%20File%20Reader.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_451/TCP%20File%20Reader">View</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of second row -->
+						<!-- Third row of assignments list -->
+						<div class="row assignments_row">
+							<!-- Web Server -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="row">
+									<div class="col-sm-4 col-lg-3">
+										<img src="../images/icons/java_icon.png"/>
+									</div>
+									<div class="col-sm-8 col-lg-9">
+										<h3>
+											Web Server
+										</h3>
+										<p><a href="https://www.dropbox.com/s/5d7mtj0m80o0iw2/Web%20Server.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_451/Web%20Server">View</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of third row -->
+					</div>
+				</div>
+				<!-- End of programming assignments row -->
+			</div>
+		</div>
+	</body>
+</html>
