@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Custom Icons -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="../css/myStyle.css">
+		<script src="../js/myNavbar.js"></script>
+		
+		<title>Coursework page</title>	
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-fixed-top navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">
+				</a>					
+			</div>
+			<div class="container">
+				<ul class="nav navbar-nav" id="menu_nav">
+					<li id="home_menu">
+						<a href="../index.html">
+							Home
+						</a>
+					</li>
+					<!-- Courses Drop Down Menu -->
+					<li class="dropdown" id="coursework_menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Coursework <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="../my_courses/ics111.html">
+									ICS 111: Intro Comp Science I - Java
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									ICS 211: Intro Comp Science II - Java
+								</a>
+							</li>
+							<li>
+								<a href="../courses.html">
+									View All
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!-- End of Courses Drop Down Menu -->
+					<!-- Projects Drop Down Menu-->
+					<li class="dropdown" id="projects_menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Projects <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Android Chat I</a>
+							</li>
+							<li>
+								<a href="../projects.html">View All</a>
+							</li>
+						</ul>
+					</li>
+					<!-- End of Projects Drop Down Menu -->
+					<!-- About Me Menu -->
+					<li id="about_me_menu">
+						<a href="../about_me.html">
+							About Me
+						</a>
+					</li>
+					<!-- End of About Me Menu -->
+				</ul>
+				<!-- Contact and Social Navbar -->
+				<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
+					<li>
+						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
+					</li>
+					<li>
+						<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+		<!-- End of Navbar -->
+		</nav>
+		<!-- Main Content -->
+		<div class="container">
+			<div class="jumbotron" id="courses_jumbotron_title">
+				<h2 style="text-align:center">ICS 313 <br> Programming Language Theory</h2>
+				<p style="text-align:center">
+					University Of Hawaii Manoa <br>
+					Fall 2012 <br>
+					Professor: Nancy Reed
+				</p>
+			</div>
+			<div class="container main_container">
+				<div class="row page-header courses_header">
+					<h2 class="description_title"> Description </h2>
+					<p>
+					Syntax, semantics, control structures, variable binding and scopes, data and control abstractions. 
+					Programming in functional (LISP) and logic (Prolog) programming styles.
+					</p>
+				</div>
+				<div class="row page-header courses_header">
+					<h2 class="experience_gained_title"> Experience Gained </h2>
+					<ul>
+						<li>
+							Programming language concepts, syntax, semantics, and scope.
+						</li>
+						<li>
+							History of computing and programming languages.
+						</li>
+						<li>
+							Functional programming language (Lisp)
+						</li>
+						<li>
+							Logic programming language (Prolog)
+						</li>
+					</ul>
+				</div>
+				<!-- Textbooks -->
+				<div class="row page-header courses_header">
+					<div class="col-sm-12 col-lg-12">
+						<h2 class="textbooks_title"> Textbooks </h2>
+						<div class = "row">
+							<!-- Book 1 -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="col-sm-4 col-lg-3">
+									<a href="http://www.amazon.com/Programming-Language-Pragmatics-Third-Michael/dp/0123745144/ref=sr_1_1?ie=UTF8&qid=1442644595&sr=8-1&keywords=Programming+Language+Pragmatics">
+										<img src="../images/books/ICS313-Book.png"/>
+									</a>
+								</div>
+								<div class="col-sm-8 col-lg-9">
+									Programming Language Pragmatics, 3rd Edition <br>
+									Michael L. Scott <br>
+									Morgan Kaufmann <br>
+									ISBN: 978-0123745149
+								</div>
+							</div>
+							<!-- End of book 1 -->
+							<!-- Book 2 -->
+							<div class="col-sm-6 col-lg-6">
+								<div class="col-sm-4 col-lg-3">
+									<a href="http://www.amazon.com/Land-Lisp-Learn-Program-Game/dp/1593272812/ref=sr_1_1?ie=UTF8&qid=1442644684&sr=8-1&keywords=Land+of+lisp">
+										<img src="../images/books/ICS313-Book2.png"/>
+									</a>
+								</div>
+								<div class="col-sm-8 col-lg-9">
+									Land of Lisp: Learn to Program in Lisp, One Game at a Time! <br>
+									Conrad Barski <br>
+									No Starch Press <br>
+									ISBN: 978-1593272814
+								</div>
+							</div>
+							<!-- End of book 2 -->
+						</div>
+					</div>
+				</div>
+				<!-- End of textbooks -->
+				<!-- Programming Assignments -->
+				<div class="row page-header courses_header">
+					<div class="col-sm-12 col-lg-12">
+						<h2 class="programming_assignments_title"> Programming Assignments </h2>
+						<!-- First row of assignments list -->
+						<div class="row assignments_row">
+							<!-- Assignment 1 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<h1>Lisp</h1>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<h3>
+											Assignment 1 <br>
+											Guessing Game
+										</h3>
+										<p><a href="https://www.dropbox.com/s/6tqsm892b597bl8/Assignment%201%20-%20Guessing%20Game.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%201">View</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- Assignment 2 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<h1>Lisp</h1>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<h3>
+											Assignment 2 <br>
+											Recursive Function
+										</h3>
+										<p><a href="https://www.dropbox.com/s/gak2q1bqtc54yld/Assignment%202%20-%20Recursive%20Function.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%202">View</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- Assignment 3 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<h1>Lisp</h1>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<h3>
+											Assignment 3
+										</h3>
+										<p><a href="https://www.dropbox.com/s/3r8a0vao0zyns2b/Assignment%203.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%203">View</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of first row -->
+						<!-- Second row of assingments list -->
+						<div class="row assignments_row">
+							<!-- Assignment 4 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<h1>Lisp</h1>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<h3>
+											Assignment 4
+										</h3>
+										<p><a href="https://www.dropbox.com/s/jha3a9yiq04ipjy/Assignment%204.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%204">View</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- Assignment 5 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<h1>Lisp</h1>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<h3>
+											Assignment 5
+										</h3>
+										<p><a href="https://www.dropbox.com/s/w4nx4vewb4ez2nr/Assignment%205.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%205">View</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- Assignment 6 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-4 col-lg-4">
+										<h1>Lisp</h1>
+									</div>
+									<div class="col-sm-8 col-lg-8">
+										<h3>
+											Assignment 6
+										</h3>
+										<p><a href="https://www.dropbox.com/s/md55repyiknclxo/Assignment%206.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%206">View</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of second row -->
+						<!-- Third row of assingments list -->
+						<div class="row assignments_row">
+							<!-- Assignment 7 -->
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-6 col-lg-4">
+										<h1>Prolog</h1>
+									</div>
+									<div class="col-sm-6 col-lg-8">
+										<h3>
+											Assignment 7
+										</h3>
+										<p><a href="https://www.dropbox.com/s/65dzzgr7v300rp3/Assignment%207.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%207">View</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-lg-4">
+								<div class="row">
+									<div class="col-sm-6 col-lg-4">
+										<h1>Prolog</h1>
+									</div>
+									<div class="col-sm-6 col-lg-8">
+										<h3>
+											Assignment 8
+										</h3>
+										<p><a href="https://www.dropbox.com/s/8mj1xwybh9wj741/Assignment%208.zip?dl=0">Download</a></p>
+										<p><a href="https://github.com/JRasay89/School_Assignments/tree/master/ICS_313/Assignment%208">View</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of third row -->
+					</div>
+				</div>
+				<!-- End of programming assignments row -->
+			</div>
+		</div>
+	</body>
+</html>
