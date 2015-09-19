@@ -154,46 +154,6 @@ p > .home_button:active {
 	border-bottom: 15px solid transparent;
 	border-right: 12px solid #722031;
 }
-
-/***************************
-	Assignments Carousel
-****************************/
-.carousel-caption {
-	color: black;
-	position: relative;
-	left: auto;
-	right: auto;
-}
-
-.carousel-inner > .item > .item_div{
-	position: relative;
-}
-
-.img_div {
-	position: absolute;
-    top: 50%;
-	width: 50%;
-    left: 50%;
-    margin-top: -170px;
-    margin-left: -300px;
-}
-
-.caption_div {
-	position: absolute;
-    top: 50%;
-	width: 50%;
-    left: 50%;
-    margin-top: -170px;
-    margin-left: -300px;
-}
-
-.carousel-inner .active.left  { left: -33%;             }
-.carousel-inner .active.right { left: 33%;              }
-.carousel-inner .next         { left: 33%               }
-.carousel-inner .prev         { left: -33%              }
-.carousel-control.left        { background-image: none; }
-.carousel-control.right       { background-image: none; }
-
 /******************************************************************
 							Courses Page
 *******************************************************************/
@@ -204,11 +164,30 @@ p > .home_button:active {
 	color: #191919;
 	
 }
+
+.description_title,
+.experience_gained_title,
+.textbooks_title,
+.programming_assignments_title {
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: 10px 10px 5px #888888;
+    background-color: #CC3C59;
+}
 .courses_header {
 	border-color: #919191;
 	border-width: 1px;
 	border-style: none none solid none;
 }
+
+.assignments_row {
+	margin-bottom: 20px;
+}
+
 /******************************************************************
 				Main Projects Page
 *******************************************************************/
