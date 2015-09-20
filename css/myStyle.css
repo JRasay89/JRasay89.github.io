@@ -255,8 +255,27 @@ p > .home_button:active {
 	border-bottom: 10px solid transparent;
 	border-left: 15px solid #005031;
 }
+/******************************************************************
+					Projects Page
+*******************************************************************/
+.background_title,
+.demo_video_title,
+.screen_shots_title,
+.gameplay_title,
+.files_title {
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: 10px 10px 5px #888888;
+    background-color: #00C87B;
+}
 
-
+.projects_video > iframe {
+	align: middle;
+}
 /******************************************************************
 					About Me Page
 *******************************************************************/
