@@ -295,7 +295,7 @@ p > .home_button:active {
 	color: #E6E6E6;
 	text-align: center;
 }
-.aboutme_education, .aboutme_courses, .aboutme_languages_database, .aboutme_technologies {
+.aboutme_education, .aboutme_courses, .aboutme_tech_summary {
 	margin: auto;
 	border-color: #919191;
 	border-width: 1px;
@@ -311,4 +311,9 @@ p > .home_button:active {
 
 .aboutme_courses_row, .aboutme_graph_row, .aboutme_othertech_row  {
 	margin-top: 25px;
+}
+
+#graph {
+  width: 100%;
+  height: auto;
 }
