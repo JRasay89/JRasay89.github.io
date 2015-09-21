@@ -117,11 +117,11 @@ p > .home_button:active {
 }
 
 .course_description > a {
-	color: #78BCFF;
+	color: #4DD2FF;
 }
 .course_description > a:hover ,
 .course_description > a:active {
-	color: #E4F2FF;
+	color: #DBF6FF;
 }
 
 /*******************************
@@ -219,7 +219,13 @@ p > .home_button:active {
 	clear: both;
 }
 
-
+.project_description > a {
+	color: #4DD2FF;
+}
+.project_description > a:hover ,
+.project_description > a:active {
+	color: #DBF6FF;
+}
 /*******************************
 		Project Ribbon Title
 ********************************/

@@ -1,107 +1,200 @@
 $(document).ready(function() {
 	var ctx = $("#graph")[0].getContext('2d');
-	var canvasWidth = $("#graph")[0].width;
-	var canvasHeight = $("#graph")[0].height;
 	
-	drawText(ctx,"Java", 0, 25);
-	drawText(ctx,"C/C++", 0, 75);
-	drawText(ctx, "HTML/CSS", 0, 125);
-	drawText(ctx, "JavaScript", 0, 175);
-	drawText(ctx, "PHP", 0, 225);
-	drawText(ctx, "Android", 0, 275);
-	drawText(ctx, "SQL/MySQL", 0, 325);
-	
-
-	
-	//beginner
-	drawText(ctx, "Beginner", 100, 400);
-	//familiar
-	drawText(ctx, "Familiar", 200, 400);
-	//proficient
-	drawText(ctx, "Proficient", 300, 400);
-	//expert
-	drawText(ctx, "Expert", 400, 400);
-	
-	drawLineDash(ctx, 200, 350, 200, 0);
-	drawLineDash(ctx, 300, 350, 300, 0);
-	drawLineDash(ctx, 400, 350, 400, 0);
-	drawLineDash(ctx, 500, 350, 500, 0);
-
-
-	
-	//BARS
-	ctx.fillStyle = "#DC143C";
-	//Java
-	//ctx.fillRect(101,0,275, 40);
-	x = 0;
-	hello(x,ctx, 275, 1000/60);
-	
-	//C/C++
-	ctx.fillRect(101,50,250, 40);
-	//HTML/CSS
-	ctx.fillRect(101,100,200, 40);
-	//JavaScript
-	ctx.fillRect(101,150,200, 40);
-	//PHP
-	ctx.fillRect(101,200,200, 40);
-	//Android
-	ctx.fillRect(101,250,200, 40);
-	//SQL/MySQL
-	ctx.fillRect(101,300,150, 40);
+	//Create the graph
+	createGraph(ctx);
 	
 });
-function hello(x, ctx, max, fps) {
-	x += 5;
+
+function createGraph(ctx) {
+	var bars = [];
+	/****************************************************
+						Data for the bars
+	****************************************************/
+	//Add Java
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 0,
+		height: 40,
+		maxWidth: 275,
+		color: "#DC143C"
+	});
+	//Add C/C++
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 50,
+		height: 40,
+		maxWidth: 225,
+		color: "#DC143C"
+	});	
+	//Add HTML/CSS
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 100,
+		height: 40,
+		maxWidth: 200,
+		color: "#DC143C"
+	});	
+	//Add JavaScript
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 150,
+		height: 40,
+		maxWidth: 200,
+		color: "#DC143C"
+	});	
+	//Add PHP
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 200,
+		height: 40,
+		maxWidth: 200,
+		color: "#DC143C"
+	});	
+	//Add Android
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 250,
+		height: 40,
+		maxWidth: 225,
+		color: "#DC143C"
+	});	
+	//Add SQL/MySQL
+	bars.push({
+		name: "Java",
+		x: 100,
+		y: 300,
+		height: 40,
+		maxWidth: 150,
+		color: "#DC143C"
+	});	
+	
+	/****************************************************
+				Data for the Y and X axis labels
+	****************************************************/
+	var labels = [];
+	/********************
+			Y axis
+	********************/
+	//Java Label
+	labels.push({
+		name: "Java",
+		x: 0,
+		y: 25
+	});
+	//C/C++ Label
+	labels.push({
+		name: "C/C++",
+		x: 0,
+		y: 75
+	});
+	//HTML/CSS
+	labels.push({
+		name: "HTML/CSS",
+		x: 0,
+		y: 125
+	});
+	//JavaScript
+	labels.push({
+		name: "JavaScript",
+		x: 0,
+		y: 175
+	});
+	//PHP
+	labels.push({
+		name: "PHP",
+		x: 0,
+		y: 225
+	});
+	//Android
+	labels.push({
+		name: "Android",
+		x: 0,
+		y: 275
+	});
+	//SQL/MySQL
+	labels.push({
+		name: "SQL/MySQL",
+		x: 0,
+		y: 325
+	});
+	
+	/********************
+			x axis
+	********************/
+	//Beginner
+	labels.push({
+		name: "Beginner",
+		x: 100,
+		y: 400
+	});
+	//Familiar
+	labels.push({
+		name: "Familiar",
+		x: 200,
+		y: 400
+	});
+	//Proficient
+	labels.push({
+		name: "Proficient",
+		x: 300,
+		y: 400
+	});
+	//Expert
+	labels.push({
+		name: "Expert",
+		x: 400,
+		y: 400
+	});
+	
+	//Draw the line marker for x axis labels
+	drawLineDash(ctx, 200, 350, 200, 0, [5, 10]);
+	drawLineDash(ctx, 300, 350, 300, 0, [5, 10]);
+	drawLineDash(ctx, 400, 350, 400, 0, [5, 10]);
+	drawLineDash(ctx, 500, 350, 500, 0, [5, 10]);
+	
+	var percent = 0; //Percentage of animation done
+	var fps = 1000/60; //60 frames per second
+	drawLabels(ctx, labels);
+	animateBar(ctx, bars, percent, fps);
+}
+
+function drawLabels(ctx, labels) {
+	for (var i = 0; i < labels.length; i++) {
+		drawText(ctx, labels[i].name, labels[i].x, labels[i].y);
+	}
+}
+
+function animateBar(ctx, bars, percent, fps) {
+	percent += 2; //Increase percent done by 2
+	for (var i = 0; i < bars.length; i++) {
+		drawBar(ctx, bars[i].x,bars[i].y, bars[i].maxWidth*(percent/100), bars[i].height, bars[i].color);
+	}
+	if (percent < 100) {
+		setTimeout(function() {animateBar(ctx, bars, percent, fps);}, fps);
+	}
+}
+
+function drawBar(ctx, x, y, width, height, color) {
 	// Turn on shadow
     ctx.shadowOffsetX = 2;
     ctx.shadowOffsetY = 2;
     ctx.shadowBlur = 2;
     ctx.shadowColor = "#999";
-	ctx.fillStyle = "#DC143C";
-
-	//Java
-	ctx.fillRect(101,0,x, 40);
-		// Turn off shadow
+	
+	ctx.fillStyle = color;
+	ctx.fillRect(x, y, width, height);
+	
+	// Turn off shadow
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     ctx.shadowBlur = 0;
-	//console.log(x);
-	if (x < max) {
-		console.log(fps);
-		setTimeout(function() {hello(x, ctx, max, fps);}, fps);
-	}
-}
-
-function BarGraph(ctx, fps, bars) {
-	this.ctx = ctx;
-
-	var bars = bars;
-	
-	var percent  = 0;
-	var fps = fps;
-	var that = this;
-	
-	this.show = function() {
-		animate();
-	}
-	
-	var animate = function() {
-		console.log(percent);
-		console.log("FPS: " + fps);
-		console.log("Max: " + bars[0].max );
-		
-		ctx.fillStyle = "#FF7070";
-		ctx.fillRect(225,50,50, bars[0].max * (percent/100) );
-		
-		ctx.fillStyle = "#8877F0";
-		ctx.fillRect(325,175,50,bars[1].max * (percent/100));
-	
-		percent++;
-		if (percent <= 100) {
-			setTimeout(function(){animate(percent)}, fps);
-		}
-
-	}
 }
 
 function drawLine(ctx, startX, startY, endX, endY) {
@@ -113,8 +206,8 @@ function drawLine(ctx, startX, startY, endX, endY) {
 	ctx.stroke();
 }
 
-function drawLineDash(ctx, startX, startY, endX, endY) {
-	ctx.setLineDash([5, 15]);
+function drawLineDash(ctx, startX, startY, endX, endY, segments) {
+	ctx.setLineDash(segments);
 	ctx.beginPath();
 	ctx.moveTo(startX, startY);
 	ctx.lineTo(endX, endY);

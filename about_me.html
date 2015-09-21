@@ -26,45 +26,43 @@
 				<a class="navbar-brand" href="index.html">
 				</a>					
 			</div>
-			<div class="container">
-				<ul class="nav navbar-nav">
+			<div class="container nav_container">
+				<ul class="nav navbar-nav" id="menu_nav">
 					<li id="home_menu">
 						<a href="index.html">
 							Home
 						</a>
 					</li>
-					<!-- Courses Drop Down Menu -->
-					<li class="dropdown" id="coursework_menu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							Coursework <span class="caret"></span>
+					<!-- Coursework Menu -->
+					<li id="coursework_menu">
+						<a href="courses.html">
+							Coursework
 						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="my_courses/ics111.html">
-									ICS 111: Intro Comp Science I - Java
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									ICS 211: Intro Comp Science II - Java
-								</a>
-							</li>
-							<li>
-								<a href="courses.html">
-									View All
-								</a>
-							</li>
-						</ul>
 					</li>
-					<!-- End of Courses Drop Down Menu -->
+					<!-- End of Coursework Menu -->
 					<!-- Projects Drop Down Menu-->
-					<li class="dropdown">
+					<li class="dropdown" id="projects_menu">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 							Projects <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="#">Android Chat I</a>
+								<a href="my_projects/androidchat_I.html">Android Chat I</a>
+							</li>
+							<li>
+								<a href="#">Android Chat II</a>
+							</li>
+							<li>
+								<a href="my_projects/breakout.html">Breakout</a>
+							</li>
+							<li>
+								<a href="my_projects/tappy_plane.html">Tappy Plane</a>
+							</li>
+							<li>
+								<a href="#">ICS 415 - Web Forum Project</a>
+							</li>
+							<li>
+								<a href="#">Portfolio Website</a>
 							</li>
 							<li>
 								<a href="projects.html">View All</a>
@@ -74,11 +72,14 @@
 					<!-- End of Projects Drop Down Menu -->
 					<!-- About Me Menu -->
 					<li id="about_me_menu">
-						<a href="about_me.html">About Me</a>
+						<a href="about_me.html">
+							About Me
+						</a>
 					</li>
 					<!-- End of About Me Menu -->
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
+				<!-- Contact and Social Navbar -->
+				<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
 					<li>
 						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
 					</li>
@@ -99,19 +100,23 @@
 		<div class="container main_container" id="main_body">
 			<!-- About Me And Profile Picture -->
 			<div class="row page-header">
+				<div class="col-sm-1 col-lg-2">
+				</div>
 				<!-- About Me -->
-				<div class="col-sm-8 col-lg-8">
-					<h4 class="aboutme_description">
+				<div class="col-sm-6 col-lg-6">
+					<p class="aboutme_description">
 					 I graduated from the University of Hawaii in May 2014 with a Bachelors of Science degree in Computer Science. 
 					 My education primarily consisted of courses that focused on the Java Programming Language, but I have also taken courses 
 					 that gave me experience using other languages and technologies such as C, C++, JavaScript, PHP, HTML and CSS. 
 					 Programming is something that I enjoy because you're always learning, and making something and seeing them work for the first time 
 					 is a great feeling. It is also a great feeling to be able to program applications that can be of use to others.
-					</h4>
+					</p>
 				</div>
 				<!-- Profile Picture -->
-				<div class="col-sm-4 col-lg-4">
+				<div class="col-sm-4 col-lg-2">
 					<p class="profile_picture"><img src="images/myProfilePicture.JPG"/></p>
+				</div>
+				<div class="col-sm-1 col-lg-2">
 				</div>
 			</div>
 			<!-- Education-->
@@ -169,47 +174,47 @@
 									<a href="my_courses/ics111.html">Intro to Computer Science I - Java</a>
 								</li>
 								<li>
-								Intro to Comp Science II - Java
+									<a href="my_courses/ics211.html">Intro to Comp Science II - Java</a>
 								</li>
 								<li>
-								Program Structure - C & C++
+								<a href="my_courses/ics212.html">Program Structure - C & C++</a>
 								</li>
 								<li>
-								Data Storage & Retrieval
+									<a href="my_courses/ics321.html">Data Storage & Retrieval</a>
 								</li>
 								<li>
-								Algorithms
+									<a href="my_courses/ics311.html">Algorithms</a>
 								</li>
 								<li>
-								Programming Language Theory
+									<a href="my_courses/ics313.html">Programming Language Theory</a>
 								</li>
 								<li>
-								Software Engineering I
+									<a href="my_courses/ics314.html">Software Engineering I</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-sm-6">
 							<ul>
 								<li>
-									<a href="#">Software Engineering II</a>
+									<a href="414">Software Engineering II</a>
 								</li>
 								<li>
-								Operating Systems
+									<a href="my_courses/ics332.html">Operating Systems</a>
 								</li>
 								<li>
-								Design for Mobile Devices
+									<a href="my_courses/ics466.html">Design for Mobile Devices</a>
 								</li>
 								<li>
-								Introduction to Scripting
+									<a href="my_courses/ics215.html">Introduction to Scripting</a>
 								</li>
 								<li>
-								Intro to Programming for the Web
+									<a href="my_courses/ics415.html">Introduction to Programming for the Web</a>
 								</li>
 								<li>
-								Web Design and Management
+									<a href="my_courses/ics415.html">Web Design and Management</a>
 								</li>
 								<li>
-								Data Networks
+									<a href="my_courses/ics451.html">Data Networks</a>
 								</li>
 							</ul>
 						</div>
@@ -225,7 +230,7 @@
 						<h2 class="aboutme_title aboutme_tech_summary"> Technology Summary </h2>
 						<div class="col-sm-6 col-lg-6">
 							<h2 class="aboutme_languages_database" style="text-align:center"> Programming Languages/Database </h2>
-							<canvas id="graph" width="500" height="450">   
+							<canvas id="graph" width="525" height="450">   
 							</canvas>
 						</div>
 						<div class="col-sm-6 col-lg-6">
