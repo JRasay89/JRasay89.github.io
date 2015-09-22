@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	var ctx = $("#graph")[0].getContext('2d');
-	
 	//Create the graph
 	createGraph(ctx);
 	
@@ -159,14 +158,37 @@ function createGraph(ctx) {
 	drawLineDash(ctx, 400, 350, 400, 0, [5, 10]);
 	drawLineDash(ctx, 500, 350, 500, 0, [5, 10]);
 	
-	var percent = 0; //Percentage of animation done
-	var fps = 1000/60; //60 frames per second
 	drawLabels(ctx, labels);
+	
+
+	var fps = 1000/60; //60 frames per second
+	var isDrawn = false;
+	var canvasWidth = $("#graph")[0].width;
+	var canvasHeight = $("#graph")[0].height;
+
+
 	//Animate bars when canvas is visible on screen
 	$(window).scroll(function() {
 			if (isElemVisible("#graph")) {
-				$(window).off('scroll');
-				animateBar(ctx, bars, percent, fps);
+				if (!isDrawn) {
+					animateBar(ctx, bars, 0, fps);
+					//$(window).off('scroll'); //turn off scrolling
+					isDrawn = true;
+				}
+				
+			}
+			else {
+				if (isDrawn) {
+					//Clear canvas
+					ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+					//Redraw labels
+					drawLineDash(ctx, 200, 350, 200, 0, [5, 10]);
+					drawLineDash(ctx, 300, 350, 300, 0, [5, 10]);
+					drawLineDash(ctx, 400, 350, 400, 0, [5, 10]);
+					drawLineDash(ctx, 500, 350, 500, 0, [5, 10]);
+					drawLabels(ctx, labels);
+					isDrawn = false;
+				}
 			}
 	})
 	
@@ -175,12 +197,13 @@ function createGraph(ctx) {
 /*
   Animate the bars
  */
-function animateBar(ctx, bars, percent, fps) {
-	percent += 2; //Increase percent done by 2
-	for (var i = 0; i < bars.length; i++) {
-		drawBar(ctx, bars[i].x,bars[i].y, bars[i].maxWidth*(percent/100), bars[i].height, bars[i].color);
-	}
-	if (percent < 100) {
+function animateBar(ctx, bars, percent, fps, timerId) {
+
+	if ((percent <= 100 && isElemVisible("#graph")) ) {	
+		percent += 2; //Increase percent done by 2
+		for (var i = 0; i < bars.length; i++) {
+			drawBar(ctx, bars[i].x,bars[i].y, bars[i].maxWidth*(percent/100), bars[i].height, bars[i].color);
+		}
 		setTimeout(function() {animateBar(ctx, bars, percent, fps);}, fps);
 	}
 }
@@ -253,8 +276,8 @@ function isElemVisible(elem) {
 	var viewBottom = viewTop + $window.height();
 	
 	var elemTop = $elem.offset().top; 
-	var elemMid = elemTop + $elem.height()/2;
-	var elemBottom = elemTop + $elem.height();
+	//var elemMid = elemTop + $elem.height()/2;
+	//var elemBottom = elemTop + $elem.height();
 	
 	//console.log("Window Height: " + $(window).height());
 	//console.log("ViewTop: " + viewTop);
@@ -264,5 +287,5 @@ function isElemVisible(elem) {
 	//console.log("Elem Bottom: " + elemBottom);
 	
 	//if elem is visible midway
-	return ((elemMid <= viewBottom) && (elemTop >= viewTop));
+	return viewBottom >= elemTop;
 }
