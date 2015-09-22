@@ -1,5 +1,5 @@
 /******************************************************************
-		General
+								Body
 *******************************************************************/
 body, html {
 	height: 100%;
@@ -10,10 +10,9 @@ body{
 }
 
 /******************************************************************
-				Navbar
+								Navbar
 *******************************************************************/
 .navbar {
-	padding-top: 25px;
 	border-radius: 0px;
 	background-image: url("../images/background/noisy_net_@2X.png");
 	border-color: #919191;
@@ -21,12 +20,12 @@ body{
 	
 }
 .navbar-nav {
-	margin: -12px;
+	padding: 12px 0;
 }
 
 .navbar .navbar-nav > li > a {
 	color: #CCCCCC;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .navbar .navbar-nav > li > a:hover,
@@ -42,6 +41,9 @@ body{
     background-color: #AC2832;
 }
 
+/*******************************
+	Dropdown Menu style
+********************************/
 .navbar-default .dropdown-menu {
     background-image: url("../images/background/noisy_net_@2X.png");
 }
@@ -62,9 +64,24 @@ body{
     color:#FFFFFF;
 }
 
-/*********************************************
-					Index Page
-*********************************************/
+/*******************************
+	Navbar toggle style
+********************************/
+.navbar-default .navbar-toggle {
+  border-color: #919191;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #AC2832;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+/************************************************************************
+							Index Page
+*************************************************************************/
 #index_jumbotron_title {
 	margin-top: 100px;
 	color: #191919;
@@ -72,24 +89,45 @@ body{
 	
 }
 
-p > .home_button {
+.main_button {
+	position:relative;
 	border-radius: 0px;
 	background-color: #AC2832;
 	color: #FFFFFF;
 }
 
-p > .home_button:hover,
-p > .home_button:focus,
-p > .home_button:active {
-	box-shadow: none;
+.main_button:hover,
+.main_button:focus,
+.main_button:active {
 	background-color: #AC2832;
 	color: #FFFFFF;
 }
 
+.main_button:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height:2px;
+	bottom: 0;
+	left: 0;
+	background-color: #00B2B2;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+	
+}
 
-/******************************************************************
-				Main Courses Page
-*******************************************************************/
+.main_button:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+
+
+/************************************************************************
+							Main Courses Page
+*************************************************************************/
 #main_courses_jumbotron_title {
 	background:transparent;
 	padding: 100px;
@@ -108,7 +146,7 @@ p > .home_button:active {
 .indiv_course_div {
 	flex: 1;
 	margin: 10px;
-    background-color: #AC2832;
+    background-color: #B01030;
     box-shadow: 10px 10px 5px #888888;
 
 }
@@ -152,7 +190,7 @@ p > .home_button:active {
 	left: 0;
 	content: "";
 	border-bottom: 15px solid transparent;
-	border-right: 12px solid #722031;
+	border-right: 10px solid #722031;
 }
 /******************************************************************
 							Courses Page
@@ -191,11 +229,15 @@ p > .home_button:active {
 /******************************************************************
 				Main Projects Page
 *******************************************************************/
-#projects_jumbotron_title {
+.projects_jumbotron_title {
 	background:transparent;
 	padding: 100px;
 	margin-bottom: -100px;
 	color: #191919;
+}
+
+.projects_jumbotron_title * {
+	text-align: center;
 }
 
 .projects_row {
@@ -285,11 +327,14 @@ p > .home_button:active {
 /******************************************************************
 					About Me Page
 *******************************************************************/
-#aboutme_jumbotron_title {
+.aboutme_jumbotron_title {
 	background:transparent;
 	padding: 100px;
 	margin-bottom: -100px;
 	color: #191919;
+}
+.aboutme_jumbotron_title * {
+	text-align: center;
 }
 
 .aboutme_description {
@@ -301,7 +346,9 @@ p > .home_button:active {
 	color: #E6E6E6;
 	text-align: center;
 }
-.aboutme_education, .aboutme_courses, .aboutme_tech_summary {
+.aboutme_education, 
+.aboutme_courses, 
+.aboutme_tech_summary {
 	margin: auto;
 	border-color: #919191;
 	border-width: 1px;
@@ -315,7 +362,9 @@ p > .home_button:active {
 	text-align: center;
 }
 
-.aboutme_courses_row, .aboutme_graph_row, .aboutme_othertech_row  {
+.aboutme_courses_row, 
+.aboutme_graph_row, 
+.aboutme_othertech_row  {
 	margin-top: 25px;
 }
 

@@ -17,36 +17,68 @@
 		
 		<title>Coursework page</title>
 	</head>
-	<body>
-		<div id="main_div">			
-			<!-- Navbar -->
-			<nav class="navbar navbar-fixed-top navbar-default">
+	<body>	
+		<!-- Navbar -->
+		<nav class="navbar navbar-fixed-top navbar-default">
+			<div class="container">
+				<!-- Navbar Header -->
 				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">
-
-					</a>					
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>				
 				</div>
-				<div class="container">
+				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li id="home_menu">
 							<a href="index.html">
 								Home
 							</a>
 						</li>
-						<!-- Courses Menu -->
+						<!-- Coursework Menu -->
 						<li id="coursework_menu">
-							<a href="courses.html">Coursework</a>
+							<a href="courses.html">
+								Coursework
+							</a>
 						</li>
-						<!-- End of Courses Menu -->
+						<!-- End of Coursework Menu -->
 						<!-- Projects Drop Down Menu-->
-						<li class="dropdown">
+						<li class="dropdown" id="projects_menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 								Projects <span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Android Chat I</a>
+								<li class="dropdown-header">
+									Mobile Projects
 								</li>
+								<li>
+									<a href="my_projects/androidchat_I.html">Android Chat I</a>
+								</li>
+								<li>
+									<a href="my_projects/androidchat_II.html">Android Chat II</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Game Projects
+								</li>
+								<li>
+									<a href="my_projects/breakout.html">Breakout</a>
+								</li>
+								<li>
+									<a href="my_projects/tappy_plane.html">Tappy Plane</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Web Projects
+								</li>
+								<li>
+									<a href="my_projects/web_forum.html">ICS 415 - Web Forum Project</a>
+								</li>
+								<li>
+									<a href="my_projects/portfolio_website.html">Portfolio Website</a>
+								</li>
+								<li role="separator" class="divider"></li>
 								<li>
 									<a href="projects.html">View All</a>
 								</li>
@@ -54,12 +86,15 @@
 						</li>
 						<!-- End of Projects Drop Down Menu -->
 						<!-- About Me Menu -->
-						<li>
-							<a href="about_me.html">About Me</a>
+						<li id="about_me_menu">
+							<a href="about_me.html">
+								About Me
+							</a>
 						</li>
 						<!-- End of About Me Menu -->
 					</ul>
-					<ul class="nav navbar-nav navbar-right">
+					<!-- Contact and Social Navbar -->
+					<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
 						<li>
 							<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
 						</li>
@@ -71,229 +106,228 @@
 						</li>
 					</ul>
 				</div>
-			<!-- End of Navbar -->
-			</nav>
-			<!-- Main content -->
-			<div class="jumbotron" id="main_courses_jumbotron_title">
-					<h1 style="text-align:center">Coursework</h1>
-					<p style="text-align:center">Below is a list of courses that I've taken as a Computer science student.</p>
 			</div>
-			<div class="container">
-				<!-- ICS 111, 211, 212 Row -->
-				<div class="row page-header course_list_row">
-					<!-- ICS 111 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 111 </h2>
-						</div>
-						<h2 class="course_title"> Introduction to Computer Science I - Java </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Intended for Computer Science majors and all others interested in the first course in programming. 
-							An overview of the fundamentals of computer science emphasizing problem solving, algorithm development,
-							implementation, and debugging/ testing using an object-oriented programming language.
-							<br>
-							<a href="my_courses/ics111.html"> View more details </a>
-						</p>
+		<!-- End of Navbar -->
+		</nav>
+		<!-- Main content -->
+		<div class="jumbotron" id="main_courses_jumbotron_title">
+				<h1 style="text-align:center">Coursework</h1>
+				<p style="text-align:center">Below is a list of courses that I've taken as a Computer science student.</p>
+		</div>
+		<div class="container">
+			<!-- ICS 111, 211, 212 Row -->
+			<div class="row page-header course_list_row">
+				<!-- ICS 111 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 111 </h2>
 					</div>
-					<!-- ICS 211 heading -->
-					<div class ="col-xs-6 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number""> ICS 211</h2>
-						</div>
-						<h2 class="course_title"> Introduction to Computer Science II - Java </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Reinforce and strengthen problem-solving skills using more advanced features of 
-							programming languages and algorithms such as recursion, pointers, and memory management.
-							Emphasize the use of data structures such as arrays, lists, stacks, and queues.
-							<br>
-							<a href="my_courses/ics211.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 212 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 212</h2>
-						</div>
-						<h2 class="course_title"> Program Structure </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Program organization paradigm, programming environments, implementation of a 
-							module from specifications, the C and C++ programming languages.
-							<br>
-							<a href="my_courses/ics212.html"> View more details </a>
-						</p>
-					</div>
-				</div>
-				<!-- ICS 215, 311 and 313 Row -->
-				<div class="row page-header course_list_row">
-					<!-- ICS 215 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 215</h2>
-						</div>
-						<h2 class="course_title"> Introduction to scripting </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Introduction to scripting languages for the integration of applications and systems. 
-							Scripting in operating systems, web pages, server-side application.
-							<br>
-							<a href="my_courses/ics215.html"> View more details </a>
-						</p>						
-					</div>
-					<!-- ICS 311 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 311</h2>
-						</div>
-						<h2 class="course_title"> Algorithms </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Design and correctness of algorithms, including divide-and-conquer, greedy and dynamic programming methods. 
-							Complexity analyses using recurrence relations, probabilistic methods, and NP-completeness. 
-							Applications to order statistics, disjoint sets, B-trees and balances trees, graphs, network flows, and string matching.
-							<br>
-							<a href="my_courses/ics311.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 313 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<!-- Course title -->
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 313</h2>
-						</div>
-						<h2 class="course_title"> Programming Language Theory </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Syntax, semantics, control structures, variable binding and scopes, data and control abstractions. 
-							Programming in functional (LISP) and logic (Prolog) programming styles.
-							<br>
-							<a href="my_courses/ics313.html"> View more details </a>
-						</p>
-					</div>
-				</div>
-				<div class="row page-header course_list_row">
-					<!-- ICS 314 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 314</h2>
-						</div>
-						<h2 class="course_title"> Software Engineering I </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							System specification, modeling and analysis, prototyping, hierarchal design, program methods, cost estimation, 
-							project management, computer-aided software design. Team-oriented software-design project.
-							<br>
-							<a href="my_courses/ics314.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 315 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">
-							<h2 class="course_title course_number"> ICS 315</h2>
-						</div>
-						<h2 class="course_title"> Web Design and Management </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Web design principles, XML and HTML, tables, forms, and frames, multimedia objects, security, 
-							scripting for web applications, web servers, commercial aspects, new technology.
-							<br>
-							<a href="my_courses/ics315.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 321 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">	
-							<h2 class="course_title course_number"> ICS 321</h2>
-						</div>
-						<h2 class="course_title"> Data Storage & Retrieval </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Data storage devices, timing and capacity, programming for files, hashed and indexed files, 
-							introduction to relational database systems.
-							<br>
-							<a href="my_courses/ics321.html"> View more details </a>
-						</p>
-					</div>
-				</div>
-				<div class="row page-header course_list_row">
-					<!-- ICS 332 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">	
-							<h2 class="course_title course_number"> ICS 332 </h2>
-						</div>
-						<h2 class="course_title"> Operating Systems </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Operating system concepts and structure, processes and threads, CPU scheduling, memory management, 
-							scheduling, file systems, inter-process communication, virtualization, popular operating systems.
-							<br>
-							<a href="my_courses/ics332.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 414 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">	
-							<h2 class="course_title course_number"> ICS 414</h2>
-						</div>
-						<h2 class="course_title"> Software Engineering II </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Continuation of 314. Project management, quality, and productivity control, testing and validation, team management. 
-							Team-oriented software-implementation project.
-							<br>
-							<a href="my_courses/ics414.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 415 heading -->
-					<div class ="col-xs-4 col-lg-4 indiv_course_div">
-						<div class="course_number_ribbon">	
-							<h2 class="course_title course_number"> ICS 415 </h2>
-						</div>
-						<h2 class="course_title"> Introduction to programming for the web </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Introduction to emerging technologies for construction of World Wide Web (WWW)-based software. 
-							Covers programming and scripting languages used for the creation of WWW sites and client-server programming. 
-							Students will complete a medium-sized software project that uses languages and concepts discussed in class.
-							<br>
-							<a href="my_courses/ics415.html"> View more details </a>
-						</p>
-					</div>
-				</div>
-				<div class="row page-header course_list_row">
-					<!-- ICS 451 heading -->
-					<div class ="col-xs-6 col-lg-6 indiv_course_div">
-						<div class="course_number_ribbon">	
-							<h2 class="course_title course_number"> ICS 451 </h2>
-						</div>
-						<h2 class="course_title"> Data Networks </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-							Network analysis, architecture, digital signal analysis and design; circuit switching, packet switching, packet broadcasting;
-							protocols and standards; local area networks; satellite networks; ALOHA channels; examples.
-							<br>
-							<a href="my_courses/ics451.html"> View more details </a>
-						</p>
-					</div>
-					<!-- ICS 466 heading -->
-					<div class ="col-xs-6 col-lg-6 indiv_course_div">
-						<div class="course_number_ribbon">	
-							<h2 class="course_title course_number"> ICS 466 </h2>
-						</div>
-						<h2 class="course_title"> Design for Mobile Devices </h2>
-						<!-- Description of course -->
-						<p class="course_description">
-						Lecture introducing design issues, programming languages, operating systems and mark-up languages for internet-enabled mobile devices, 
-						such as cell phones and PDSs.
+					<h2 class="course_title"> Introduction to Computer Science I - Java </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Intended for Computer Science majors and all others interested in the first course in programming. 
+						An overview of the fundamentals of computer science emphasizing problem solving, algorithm development,
+						implementation, and debugging/ testing using an object-oriented programming language.
 						<br>
-						<a href="my_courses/ics466.html"> View more details </a>
-						</p>
+						<a href="my_courses/ics111.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 211 heading -->
+				<div class ="col-xs-6 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 211</h2>
 					</div>
+					<h2 class="course_title"> Introduction to Computer Science II - Java </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Reinforce and strengthen problem-solving skills using more advanced features of 
+						programming languages and algorithms such as recursion, pointers, and memory management.
+						Emphasize the use of data structures such as arrays, lists, stacks, and queues.
+						<br>
+						<a href="my_courses/ics211.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 212 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 212</h2>
+					</div>
+					<h2 class="course_title"> Program Structure </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Program organization paradigm, programming environments, implementation of a 
+						module from specifications, the C and C++ programming languages.
+						<br>
+						<a href="my_courses/ics212.html"> View more details </a>
+					</p>
 				</div>
 			</div>
-		<!-- End of main div -->
+			<!-- ICS 215, 311 and 313 Row -->
+			<div class="row page-header course_list_row">
+				<!-- ICS 215 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 215</h2>
+					</div>
+					<h2 class="course_title"> Introduction to scripting </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Introduction to scripting languages for the integration of applications and systems. 
+						Scripting in operating systems, web pages, server-side application.
+						<br>
+						<a href="my_courses/ics215.html"> View more details </a>
+					</p>						
+				</div>
+				<!-- ICS 311 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 311</h2>
+					</div>
+					<h2 class="course_title"> Algorithms </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Design and correctness of algorithms, including divide-and-conquer, greedy and dynamic programming methods. 
+						Complexity analyses using recurrence relations, probabilistic methods, and NP-completeness. 
+						Applications to order statistics, disjoint sets, B-trees and balances trees, graphs, network flows, and string matching.
+						<br>
+						<a href="my_courses/ics311.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 313 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<!-- Course title -->
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 313</h2>
+					</div>
+					<h2 class="course_title"> Programming Language Theory </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Syntax, semantics, control structures, variable binding and scopes, data and control abstractions. 
+						Programming in functional (LISP) and logic (Prolog) programming styles.
+						<br>
+						<a href="my_courses/ics313.html"> View more details </a>
+					</p>
+				</div>
+			</div>
+			<div class="row page-header course_list_row">
+				<!-- ICS 314 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 314</h2>
+					</div>
+					<h2 class="course_title"> Software Engineering I </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						System specification, modeling and analysis, prototyping, hierarchal design, program methods, cost estimation, 
+						project management, computer-aided software design. Team-oriented software-design project.
+						<br>
+						<a href="my_courses/ics314.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 315 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">
+						<h2 class="course_title course_number"> ICS 315</h2>
+					</div>
+					<h2 class="course_title"> Web Design and Management </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Web design principles, XML and HTML, tables, forms, and frames, multimedia objects, security, 
+						scripting for web applications, web servers, commercial aspects, new technology.
+						<br>
+						<a href="my_courses/ics315.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 321 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">	
+						<h2 class="course_title course_number"> ICS 321</h2>
+					</div>
+					<h2 class="course_title"> Data Storage & Retrieval </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Data storage devices, timing and capacity, programming for files, hashed and indexed files, 
+						introduction to relational database systems.
+						<br>
+						<a href="my_courses/ics321.html"> View more details </a>
+					</p>
+				</div>
+			</div>
+			<div class="row page-header course_list_row">
+				<!-- ICS 332 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">	
+						<h2 class="course_title course_number"> ICS 332 </h2>
+					</div>
+					<h2 class="course_title"> Operating Systems </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Operating system concepts and structure, processes and threads, CPU scheduling, memory management, 
+						scheduling, file systems, inter-process communication, virtualization, popular operating systems.
+						<br>
+						<a href="my_courses/ics332.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 414 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">	
+						<h2 class="course_title course_number"> ICS 414</h2>
+					</div>
+					<h2 class="course_title"> Software Engineering II </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Continuation of 314. Project management, quality, and productivity control, testing and validation, team management. 
+						Team-oriented software-implementation project.
+						<br>
+						<a href="my_courses/ics414.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 415 heading -->
+				<div class ="col-xs-4 col-lg-4 indiv_course_div">
+					<div class="course_number_ribbon">	
+						<h2 class="course_title course_number"> ICS 415 </h2>
+					</div>
+					<h2 class="course_title"> Introduction to programming for the web </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Introduction to emerging technologies for construction of World Wide Web (WWW)-based software. 
+						Covers programming and scripting languages used for the creation of WWW sites and client-server programming. 
+						Students will complete a medium-sized software project that uses languages and concepts discussed in class.
+						<br>
+						<a href="my_courses/ics415.html"> View more details </a>
+					</p>
+				</div>
+			</div>
+			<div class="row page-header course_list_row">
+				<!-- ICS 451 heading -->
+				<div class ="col-xs-6 col-lg-6 indiv_course_div">
+					<div class="course_number_ribbon">	
+						<h2 class="course_title course_number"> ICS 451 </h2>
+					</div>
+					<h2 class="course_title"> Data Networks </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+						Network analysis, architecture, digital signal analysis and design; circuit switching, packet switching, packet broadcasting;
+						protocols and standards; local area networks; satellite networks; ALOHA channels; examples.
+						<br>
+						<a href="my_courses/ics451.html"> View more details </a>
+					</p>
+				</div>
+				<!-- ICS 466 heading -->
+				<div class ="col-xs-6 col-lg-6 indiv_course_div">
+					<div class="course_number_ribbon">	
+						<h2 class="course_title course_number"> ICS 466 </h2>
+					</div>
+					<h2 class="course_title"> Design for Mobile Devices </h2>
+					<!-- Description of course -->
+					<p class="course_description">
+					Lecture introducing design issues, programming languages, operating systems and mark-up languages for internet-enabled mobile devices, 
+					such as cell phones and PDSs.
+					<br>
+					<a href="my_courses/ics466.html"> View more details </a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

@@ -22,88 +22,106 @@
 	<body>
 		<!-- Navbar -->
 		<nav class="navbar navbar-fixed-top navbar-default">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
-				</a>					
+			<div class="container">
+				<!-- Navbar Header -->
+				<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>				
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li id="home_menu">
+							<a href="index.html">
+								Home
+							</a>
+						</li>
+						<!-- Coursework Menu -->
+						<li id="coursework_menu">
+							<a href="courses.html">
+								Coursework
+							</a>
+						</li>
+						<!-- End of Coursework Menu -->
+						<!-- Projects Drop Down Menu-->
+						<li class="dropdown" id="projects_menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								Projects <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">
+									Mobile Projects
+								</li>
+								<li>
+									<a href="my_projects/androidchat_I.html">Android Chat I</a>
+								</li>
+								<li>
+									<a href="my_projects/androidchat_II.html">Android Chat II</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Game Projects
+								</li>
+								<li>
+									<a href="my_projects/breakout.html">Breakout</a>
+								</li>
+								<li>
+									<a href="my_projects/tappy_plane.html">Tappy Plane</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Web Projects
+								</li>
+								<li>
+									<a href="my_projects/web_forum.html">ICS 415 - Web Forum Project</a>
+								</li>
+								<li>
+									<a href="my_projects/portfolio_website.html">Portfolio Website</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="projects.html">View All</a>
+								</li>
+							</ul>
+						</li>
+						<!-- End of Projects Drop Down Menu -->
+						<!-- About Me Menu -->
+						<li id="about_me_menu">
+							<a href="about_me.html">
+								About Me
+							</a>
+						</li>
+						<!-- End of About Me Menu -->
+					</ul>
+					<!-- Contact and Social Navbar -->
+					<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
+						<li>
+							<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
+						</li>
+						<li>
+							<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
+						</li>
+						<li>
+							<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="container nav_container">
-				<ul class="nav navbar-nav" id="menu_nav">
-					<li id="home_menu">
-						<a href="index.html">
-							Home
-						</a>
-					</li>
-					<!-- Coursework Menu -->
-					<li id="coursework_menu">
-						<a href="courses.html">
-							Coursework
-						</a>
-					</li>
-					<!-- End of Coursework Menu -->
-					<!-- Projects Drop Down Menu-->
-					<li class="dropdown" id="projects_menu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							Projects <span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="my_projects/androidchat_I.html">Android Chat I</a>
-							</li>
-							<li>
-								<a href="#">Android Chat II</a>
-							</li>
-							<li>
-								<a href="my_projects/breakout.html">Breakout</a>
-							</li>
-							<li>
-								<a href="my_projects/tappy_plane.html">Tappy Plane</a>
-							</li>
-							<li>
-								<a href="#">ICS 415 - Web Forum Project</a>
-							</li>
-							<li>
-								<a href="#">Portfolio Website</a>
-							</li>
-							<li>
-								<a href="projects.html">View All</a>
-							</li>
-						</ul>
-					</li>
-					<!-- End of Projects Drop Down Menu -->
-					<!-- About Me Menu -->
-					<li id="about_me_menu">
-						<a href="about_me.html">
-							About Me
-						</a>
-					</li>
-					<!-- End of About Me Menu -->
-				</ul>
-				<!-- Contact and Social Navbar -->
-				<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
-					<li>
-						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
-					</li>
-					<li>
-						<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
-					</li>
-					<li>
-						<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
-					</li>
-				</ul>
-			</div>
-		<!-- End of Navbar -->
 		</nav>
+		<!-- End of Navbar -->
 		<!-- Main Content -->
-		<div class="jumbotron" id="aboutme_jumbotron_title">
-			<h1 style="text-align:center">About Me</h1>
-		</div>
 		<div class="container main_container" id="main_body">
+			<div class="jumbotron aboutme_jumbotron_title">
+				<h1>About Me</h1>
+			</div>
 			<!-- About Me And Profile Picture -->
 			<div class="row page-header">
 				<div class="col-sm-1 col-lg-2">
 				</div>
 				<!-- About Me -->
-				<div class="col-sm-6 col-lg-6">
+				<div class="col-xs-8 col-sm-6 col-lg-6">
 					<p class="aboutme_description">
 					 I graduated from the University of Hawaii in May 2014 with a Bachelors of Science degree in Computer Science. 
 					 My education primarily consisted of courses that focused on the Java Programming Language, but I have also taken courses 
@@ -113,7 +131,7 @@
 					</p>
 				</div>
 				<!-- Profile Picture -->
-				<div class="col-sm-4 col-lg-2">
+				<div class="col-xs-4 col-sm-4 col-lg-2">
 					<p class="profile_picture"><img src="images/myProfilePicture.JPG"/></p>
 				</div>
 				<div class="col-sm-1 col-lg-2">
@@ -168,7 +186,7 @@
 				<div class="col-sm-12">
 					<h2 class="aboutme_title aboutme_courses" style="text-align:center"> Courses </h2>
 					<div class="row aboutme_courses_row">
-						<div class="col-sm-6">
+						<div class="col-xs-6 col-sm-6 col-lg-6">
 							<ul>
 								<li>
 									<a href="my_courses/ics111.html">Intro to Computer Science I - Java</a>
@@ -193,10 +211,10 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-xs-6 col-sm-6 col-lg-6">
 							<ul>
 								<li>
-									<a href="414">Software Engineering II</a>
+									<a href="my_courses/ics414.html">Software Engineering II</a>
 								</li>
 								<li>
 									<a href="my_courses/ics332.html">Operating Systems</a>
@@ -228,12 +246,12 @@
 					
 					<div class="row aboutme_graph_row">
 						<h2 class="aboutme_title aboutme_tech_summary"> Technology Summary </h2>
-						<div class="col-sm-6 col-lg-6">
+						<div class="col-xs-6 col-sm-6 col-lg-6">
 							<h2 class="aboutme_languages_database" style="text-align:center"> Programming Languages/Database </h2>
 							<canvas id="graph" width="525" height="450">   
 							</canvas>
 						</div>
-						<div class="col-sm-6 col-lg-6">
+						<div class="col-xs-6 col-sm-6 col-lg-6">
 							<h2 class="aboutme_languages_database" style="text-align:center"> Other Technologies </h2>
 							<ul>
 								<li>

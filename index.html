@@ -22,77 +22,95 @@
 	<body>
 		<!-- Navbar -->
 		<nav class="navbar navbar-fixed-top navbar-default">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
-				</a>					
+			<div class="container">
+				<!-- Navbar Header -->
+				<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>				
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li id="home_menu">
+							<a href="index.html">
+								Home
+							</a>
+						</li>
+						<!-- Coursework Menu -->
+						<li id="coursework_menu">
+							<a href="courses.html">
+								Coursework
+							</a>
+						</li>
+						<!-- End of Coursework Menu -->
+						<!-- Projects Drop Down Menu-->
+						<li class="dropdown" id="projects_menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								Projects <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">
+									Mobile Projects
+								</li>
+								<li>
+									<a href="my_projects/androidchat_I.html">Android Chat I</a>
+								</li>
+								<li>
+									<a href="my_projects/androidchat_II.html">Android Chat II</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Game Projects
+								</li>
+								<li>
+									<a href="my_projects/breakout.html">Breakout</a>
+								</li>
+								<li>
+									<a href="my_projects/tappy_plane.html">Tappy Plane</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Web Projects
+								</li>
+								<li>
+									<a href="my_projects/web_forum.html">ICS 415 - Web Forum Project</a>
+								</li>
+								<li>
+									<a href="my_projects/portfolio_website.html">Portfolio Website</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="projects.html">View All</a>
+								</li>
+							</ul>
+						</li>
+						<!-- End of Projects Drop Down Menu -->
+						<!-- About Me Menu -->
+						<li id="about_me_menu">
+							<a href="about_me.html">
+								About Me
+							</a>
+						</li>
+						<!-- End of About Me Menu -->
+					</ul>
+					<!-- Contact and Social Navbar -->
+					<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
+						<li>
+							<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
+						</li>
+						<li>
+							<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
+						</li>
+						<li>
+							<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="container nav_container">
-				<ul class="nav navbar-nav" id="menu_nav">
-					<li id="home_menu">
-						<a href="index.html">
-							Home
-						</a>
-					</li>
-					<!-- Coursework Menu -->
-					<li id="coursework_menu">
-						<a href="courses.html">
-							Coursework
-						</a>
-					</li>
-					<!-- End of Coursework Menu -->
-					<!-- Projects Drop Down Menu-->
-					<li class="dropdown" id="projects_menu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							Projects <span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="my_projects/androidchat_I.html">Android Chat I</a>
-							</li>
-							<li>
-								<a href="#">Android Chat II</a>
-							</li>
-							<li>
-								<a href="my_projects/breakout.html">Breakout</a>
-							</li>
-							<li>
-								<a href="my_projects/tappy_plane.html">Tappy Plane</a>
-							</li>
-							<li>
-								<a href="my_projects/web_forum.html">ICS 415 - Web Forum Project</a>
-							</li>
-							<li>
-								<a href="#">Portfolio Website</a>
-							</li>
-							<li>
-								<a href="projects.html">View All</a>
-							</li>
-						</ul>
-					</li>
-					<!-- End of Projects Drop Down Menu -->
-					<!-- About Me Menu -->
-					<li id="about_me_menu">
-						<a href="about_me.html">
-							About Me
-						</a>
-					</li>
-					<!-- End of About Me Menu -->
-				</ul>
-				<!-- Contact and Social Navbar -->
-				<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
-					<li>
-						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
-					</li>
-					<li>
-						<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
-					</li>
-					<li>
-						<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
-					</li>
-				</ul>
-			</div>
-		<!-- End of Navbar -->
 		</nav>
+		<!-- End of Navbar -->
 		<!-- Main content -->
 		<div class="container">
 			<div class="jumbotron" id="index_jumbotron_title">
@@ -103,13 +121,13 @@
 					the years as a computer science student and also during my free time.
 				<p>
 				<p style="text-align:center">
-					<a class="btn btn-primary btn-lg home_button" href="about_me.html" role="button">Learn more about me</a>
+					<a class="btn btn-custom btn-lg main_button" href="about_me.html" role="button">Learn more about me</a>
 				</p>
 				<p style="text-align:center">
-					<a class="btn btn-primary btn-lg home_button" href="courses.html" role="button">View coursework</a>
+					<a class="btn btn-custom btn-lg main_button" href="courses.html" role="button">View coursework</a>
 				</p>
 				<p style="text-align:center">
-					<a class="btn btn-primary btn-lg home_button" href="projects.html" role="button">View projects</a>
+					<a class="btn btn-custom btn-lg main_button" href="projects.html" role="button">View projects</a>
 				</p>
 			</div>
 		<!-- End of main content -->
