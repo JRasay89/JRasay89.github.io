@@ -162,15 +162,19 @@ function createGraph(ctx) {
 	var percent = 0; //Percentage of animation done
 	var fps = 1000/60; //60 frames per second
 	drawLabels(ctx, labels);
-	animateBar(ctx, bars, percent, fps);
+	//Animate bars when canvas is visible on screen
+	$(window).scroll(function() {
+			if (isElemVisible("#graph")) {
+				$(window).off('scroll');
+				animateBar(ctx, bars, percent, fps);
+			}
+	})
+	
 }
 
-function drawLabels(ctx, labels) {
-	for (var i = 0; i < labels.length; i++) {
-		drawText(ctx, labels[i].name, labels[i].x, labels[i].y);
-	}
-}
-
+/*
+  Animate the bars
+ */
 function animateBar(ctx, bars, percent, fps) {
 	percent += 2; //Increase percent done by 2
 	for (var i = 0; i < bars.length; i++) {
@@ -180,7 +184,17 @@ function animateBar(ctx, bars, percent, fps) {
 		setTimeout(function() {animateBar(ctx, bars, percent, fps);}, fps);
 	}
 }
-
+/*
+	Draw the labels for the graph
+ */
+function drawLabels(ctx, labels) {
+	for (var i = 0; i < labels.length; i++) {
+		drawText(ctx, labels[i].name, labels[i].x, labels[i].y);
+	}
+}
+/*
+	Draw a rectangle bar on the canvas
+ */
 function drawBar(ctx, x, y, width, height, color) {
 	// Turn on shadow
     ctx.shadowOffsetX = 2;
@@ -196,7 +210,9 @@ function drawBar(ctx, x, y, width, height, color) {
     ctx.shadowOffsetY = 0;
     ctx.shadowBlur = 0;
 }
-
+/*
+	Draw a line on the canvas
+ */
 function drawLine(ctx, startX, startY, endX, endY) {
 	ctx.fillStyle = "#000000";
 	ctx.beginPath();
@@ -206,6 +222,9 @@ function drawLine(ctx, startX, startY, endX, endY) {
 	ctx.stroke();
 }
 
+/*
+	Draw a line dash on the canvas
+ */
 function drawLineDash(ctx, startX, startY, endX, endY, segments) {
 	ctx.setLineDash(segments);
 	ctx.beginPath();
@@ -214,8 +233,38 @@ function drawLineDash(ctx, startX, startY, endX, endY, segments) {
 	ctx.closePath();
 	ctx.stroke();
 }
+/*
+	Draw a text on the canvas
+ */
 function drawText(ctx, text, x, y) {
 	ctx.font = "bold 15px Arial";
 	ctx.fillStyle = "#000000";
 	ctx.fillText(text, x, y);
+}
+
+/*
+  Check to see if an element is visible on screen
+*/
+function isElemVisible(elem) {
+	var $elem = $(elem);
+	var $window = $(window);
+	
+	var viewTop = $window.scrollTop();
+	var viewBottom = viewTop + $window.height();
+	
+	var elemTop = $elem.offset().top; 
+	var elemMid = elemTop + $elem.height()/2;
+	var elemBottom = elemTop + $elem.height();
+	
+	console.log("Window Height: " + $(window).height());
+	console.log("ViewTop: " + viewTop);
+	
+	console.log("ViewBottom: " + viewBottom);
+	
+	console.log("Elem Top: " + elemTop);
+	console.log("Elem Mid " + elemMid);
+	console.log("Elem Bottom: " + elemBottom);
+	
+	//if elem is visible midway
+	return ((elemMid <= viewBottom) && (elemTop >= viewTop));
 }
