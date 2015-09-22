@@ -1,3 +1,3 @@
 # PersonalPortfolioWebsite
 My Personal Portfolio  Website <br>
-Work in progress
+Language and Technology used: HTML, CSS, JavaScript, JQuery, and Bootstrap
