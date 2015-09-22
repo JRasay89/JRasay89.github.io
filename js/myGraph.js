@@ -256,14 +256,12 @@ function isElemVisible(elem) {
 	var elemMid = elemTop + $elem.height()/2;
 	var elemBottom = elemTop + $elem.height();
 	
-	console.log("Window Height: " + $(window).height());
-	console.log("ViewTop: " + viewTop);
-	
-	console.log("ViewBottom: " + viewBottom);
-	
-	console.log("Elem Top: " + elemTop);
-	console.log("Elem Mid " + elemMid);
-	console.log("Elem Bottom: " + elemBottom);
+	//console.log("Window Height: " + $(window).height());
+	//console.log("ViewTop: " + viewTop);
+	//console.log("ViewBottom: " + viewBottom);
+	//console.log("Elem Top: " + elemTop);
+	//console.log("Elem Mid " + elemMid);
+	//console.log("Elem Bottom: " + elemBottom);
 	
 	//if elem is visible midway
 	return ((elemMid <= viewBottom) && (elemTop >= viewTop));
