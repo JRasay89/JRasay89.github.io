@@ -112,6 +112,8 @@ body{
 	left: 0;
 	background-color: #00B2B2;
 	visibility: hidden;
+	-moz-transform: scaleX(0); /*Mozilla*/
+	-webkit-transform: scaleX(0); /*Chrome*/
 	transform: scaleX(0);
 	transition: all 0.3s ease-in-out 0s;
 	
@@ -119,7 +121,8 @@ body{
 
 .main_button:hover:before {
 	visibility: visible;
-	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1); /*Mozilla*/
+	-webkit-transform: scaleX(1); /*Chrome*/
 	transform: scaleX(1);
 }
 
@@ -147,6 +150,8 @@ body{
 	flex: 1;
 	margin: 10px;
     background-color: #B01030;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
     box-shadow: 10px 10px 5px #888888;
 
 }
@@ -172,8 +177,9 @@ body{
 	margin-left: -26px;
 	padding: 5px 10px;
 	float: left;
-	text-transform: uppercase;
 	border: 1px solid rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Mozilla*/
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Chrome*/
 	box-shadow: 0 1px 3px rgba(0,0,0,.2);
 
 }
@@ -213,6 +219,8 @@ body{
 	border-color: #919191;
 	border-width: 1px;
 	border-style: solid;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
 	box-shadow: 10px 10px 5px #888888;
     background-color: #CC3C59;
 }
@@ -253,6 +261,8 @@ body{
 	flex: 1;
 	margin: 0 20px;
     background-color: #2E8B57;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*chrome*/
     box-shadow: 10px 10px 5px #888888;
 
 }
@@ -276,6 +286,8 @@ body{
 	position: relative;
 	margin: 10px -15px;
 	background: #00C87B;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Mozilla*/
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Chrome*/
 	box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 
@@ -317,6 +329,8 @@ body{
 	border-color: #919191;
 	border-width: 1px;
 	border-style: solid;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
 	box-shadow: 10px 10px 5px #888888;
     background-color: #00C87B;
 }
@@ -353,6 +367,8 @@ body{
 	border-color: #919191;
 	border-width: 1px;
 	border-style: solid;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
 	box-shadow: 10px 10px 5px #888888;
     background-color: #5077BE;
 }
