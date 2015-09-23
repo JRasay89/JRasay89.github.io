@@ -25,7 +25,7 @@ function createGraph(ctx) {
 		x: 100,
 		y: 50,
 		height: 40,
-		maxWidth: 225,
+		maxWidth: 235,
 		color: "#DC143C"
 	});	
 	//Add HTML/CSS
@@ -34,7 +34,7 @@ function createGraph(ctx) {
 		x: 100,
 		y: 100,
 		height: 40,
-		maxWidth: 200,
+		maxWidth: 225,
 		color: "#DC143C"
 	});	
 	//Add JavaScript
@@ -43,7 +43,7 @@ function createGraph(ctx) {
 		x: 100,
 		y: 150,
 		height: 40,
-		maxWidth: 200,
+		maxWidth: 225,
 		color: "#DC143C"
 	});	
 	//Add PHP
