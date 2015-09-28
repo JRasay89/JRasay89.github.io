@@ -196,7 +196,7 @@ body{
 	left: 0;
 	content: "";
 	border-bottom: 15px solid transparent;
-	border-right: 11px solid #722031;
+	border-right: 11px solid #A42E46;
 }
 /******************************************************************
 							Courses Page
@@ -300,7 +300,7 @@ body{
 	left: 0;
 	content: "";
 	border-bottom: 12px solid transparent;
-	border-right: 16px solid #005031;
+	border-right: 16px solid #33735A;
 	
 }
 
@@ -313,7 +313,7 @@ body{
 	right: 0;
 	content: "";
 	border-bottom: 12px solid transparent;
-	border-left: 16px solid #005031;
+	border-left: 16px solid #33735A;
 }
 /******************************************************************
 					Projects Page
