@@ -5,6 +5,7 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________________
 
 ********************************************************************************************************************************************************/
+
 /*************************************************************************************************************************** 
 														All Devices
 _____________________________________________________________________________________________________________________________
@@ -592,6 +593,51 @@ ________________________________________________________________________________
 		font-size: 14px;
 	}
 }
+
+/* Apple Ipad portrait */
+@media (min-width: 768px) and (max-width: 768px)
+{
+	@media (min-height: 1024px) and (max-height: 1024px)
+	{
+		/**************************
+				All Content
+		***************************/
+		.content_two_img > img,
+		.content_three_img > img,
+		.content_four_img > img,
+		.content_five_img > img
+		{	
+			width: 35%;
+			height: 75%;
+			top: 20%;
+		}
+	}
+}
+/* Protrait Nexus 7 */
+@media (min-width: 603px) and (max-width: 603px)
+{
+	@media (min-height: 966px) and (max-height: 966px)
+	{
+		.content_two_three_col,
+		.content_four_five_col
+		{
+			width: 50%;
+			height: 100%;
+		}
+		/**************************
+				All Content
+		***************************/
+		.content_two_img > img,
+		.content_three_img > img,
+		.content_four_img > img,
+		.content_five_img > img
+		{	
+			width: 40%;
+			height: 75%;
+			top: 20%;
+		}
+	}
+}
 /*************************************************************************************************************************** 
 													Landscape tablets and medium desktops
 _____________________________________________________________________________________________________________________________
@@ -648,16 +694,42 @@ ________________________________________________________________________________
 		font-size: 14px;
 	}
 }
-/* Landscape Nexus 7 Tablet */
-@media (min-height: 603px) and (max-height: 603px)
+/* Apple Ipad Landscape */
+@media (min-width: 1024px) and (max-width: 1024px)
 {
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
-	{	
-		width: 15%;
-		height: 65%;
+	@media (min-height: 768px) and (max-height: 768px)
+	{
+		/**************************
+				All Content
+		***************************/
+		.content_two_img > img,
+		.content_three_img > img,
+		.content_four_img > img,
+		.content_five_img > img
+		{	
+			width: 20%;
+			height: 75%;
+			top: 20%;
+		}
+	}
+}
+/* Landscape Nexus 7 Tablet */
+@media (min-width: 966px) and (max-width: 966px)
+{
+	@media (min-height: 603px) and (max-height: 603px)
+	{
+		/**************************
+				All Content
+		***************************/
+		.content_two_img > img,
+		.content_three_img > img,
+		.content_four_img > img,
+		.content_five_img > img
+		{	
+			width: 15%;
+			height: 65%;
+			top: 20%;
+		}
 	}
 }
 /**************************************************************************************************************************** 

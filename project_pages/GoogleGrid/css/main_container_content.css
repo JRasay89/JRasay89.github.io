@@ -36,26 +36,23 @@ ________________________________________________________________________________
 													Landscape phones and portrait tablets 
 _____________________________________________________________________________________________________________________________
 *****************************************************************************************************************************/
-@media (min-width: 481px) and (max-width: 767px) 
+@media (min-width: 481px) and (max-width: 550px)
 {
-	@media (max-width: 550px )
+	.main_content_column 
 	{
-		.main_content_column 
-		{
-			width: 87.5%;
-			left: 12.5%;
-		}
-	}
-	@media (min-width: 551px ) and (max-width: 767px)
-	{
-		.main_content_column
-		{
-			width: 90.0%;
-			left: 10.0%;
-		}
-	}
+		width: 87.5%;
+		left: 12.5%;
+	}	
 }
 
+@media (min-width: 551px ) and (max-width: 767px)
+{
+	.main_content_column
+	{
+		width: 90.0%;
+		left: 10.0%;
+	}
+}
 /***************************************************************************************************************************
 														Portrait tablets and small desktops
 _____________________________________________________________________________________________________________________________
@@ -86,41 +83,36 @@ ________________________________________________________________________________
 												Large desktops and laptops 
 _____________________________________________________________________________________________________________________________
 *****************************************************************************************************************************/
-@media (min-width: 1200px)
+@media (min-width: 1200px) and (max-width: 1250px)
 {
-	@media (max-width: 1250px)
+	.main_content_column 
 	{
-		.main_content_column 
-		{
-			width: 93.0%;
-			left: 7.0%;
-		}
+		width: 93.0%;
+		left: 7.0%;
+	}	
+}
+
+@media (min-width: 1251px) and (max-width: 1500px)
+{
+	.main_content_column 
+	{
+		width: 94.0%;
+		left: 6.0%;
 	}
-	
-	@media (min-width: 1251px) and (max-width: 1500px)
+}
+@media (min-width: 1501px) and (max-width: 1700px)
+{
+	.main_content_column 
 	{
-		.main_content_column 
-		{
-			width: 94.0%;
-			left: 6.0%;
-		}
+		width: 94.75%;
+		left: 5.25%;
 	}
-	
-	@media (min-width: 1501px) and (max-width: 1700px)
+}
+@media (min-width: 1701px)
+{
+	.main_content_column 
 	{
-		.main_content_column 
-		{
-			width: 94.75%;
-			left: 5.25%;
-		}
-	}
-	
-	@media (min-width: 1701px)
-	{
-		.main_content_column 
-		{
-			width: 95.25%;
-			left: 4.75%;
-		}
+		width: 95.25%;
+		left: 4.75%;
 	}
 }
