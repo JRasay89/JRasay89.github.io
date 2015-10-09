@@ -1,0 +1,698 @@
+/******************************************************************************************************************************************************
+_______________________________________________________________________________________________________________________________________________________
+														
+																	Column One
+_______________________________________________________________________________________________________________________________________________________
+
+********************************************************************************************************************************************************/
+/*************************************************************************************************************************** 
+														All Devices
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+.content_col_one
+{
+	position: relative;
+	height: 100%;
+	padding: 0;
+	z-index: 1;
+}
+/*********************************************************
+						Content One
+__________________________________________________________
+**********************************************************/
+.col_one_row_one
+ {
+	position: relative;
+	width: 100%;
+	height: 40%;
+	margin: 0;
+	padding: 5px;
+}
+.content_one_col
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;	
+	
+}
+/****************************
+		Content One
+*****************************/
+.cutom_carousel {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.custom_carousel_inner {
+	position: relative;
+	height: 100%;
+	width: 100%;	
+}
+
+.carousel-indicators li {
+	border: none;
+    background-color: #CCCCCC;   
+}
+.carousel-indicators .active {
+    background-color: #FFA500;
+}
+/*********************
+	Slide One
+**********************/
+.slide_one {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+
+}
+.slide_one_image {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+}
+.slide_one_button {
+	position:absolute;
+	top: 10%;
+	right: 5%;
+}
+/*********************
+	Slide Two
+**********************/
+.slide_two {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+
+}
+/*********************
+	Slide Three
+**********************/
+.slide_three {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+
+}
+/*********************************************************
+			Content Two, Three, Four Five
+__________________________________________________________
+**********************************************************/
+.col_one_row_two
+ {
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: 0;
+}
+.content_two_three_col {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	padding: 0;
+}
+.content_four_five_col {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	padding: 0;
+}
+/*********************************************************
+						Content Two
+__________________________________________________________
+**********************************************************/
+.content_two_row 
+{
+	position: relative;
+	width: 100%;
+	height: 40%;
+	margin: 0;
+	padding: 5px;
+}
+.content_two_col
+{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+/************************************
+		Content Two Thumbnail
+*************************************/
+.content_two_thumbnail 
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #E53935;
+}
+.content_two_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+
+.content_two_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #B72E2A;
+	color: #FFFFFF;
+
+}
+/*********************************************************
+						Content Three
+__________________________________________________________
+**********************************************************/
+.content_three_row 
+{
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: 0;	
+	padding: 5px;
+}
+.content_three_col
+{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;	
+}
+
+/************************************
+		Content Three Thumbnail
+*************************************/
+.content_three_thumbnail
+ {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #A4C639;
+}
+.content_three_img
+{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;	
+}
+.content_three_caption
+{
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #839E2E;
+	color: #FFFFFF;
+}
+/*********************************************************
+						Content Four
+__________________________________________________________
+**********************************************************/
+.content_four_row 
+{
+	position: relative;
+	width: 100%;
+	height: 55%;
+	margin: 0;	
+	padding: 5px;
+}
+.content_four_col
+{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;		
+}
+/************************************
+		Content Four Thumbnail
+*************************************/
+.content_four_thumbnail
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #7F1616;
+}
+.content_four_img
+{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_four_caption
+{
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	background-color: #661212;
+	color: #FFFFFF;
+}
+/*********************************************************
+						Content Five
+__________________________________________________________
+**********************************************************/
+.content_five_row 
+{
+	position: relative;
+	width: 100%;
+	height: 45%;
+	margin: 0;
+	padding: 5px;
+}
+.content_five_col
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+/************************************
+		Content Five Thumbnail
+*************************************/
+.content_five_thumbnail
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #FFD700;
+}
+.content_five_img
+{
+	position: absolute;
+	width: 100%;
+	height: 55%;
+	text-align: center;	
+}
+.content_five_caption
+{
+	position: absolute;
+	width: 100%;
+	height: 45%;
+	top: 55%;
+	background-color: #E6C200;
+	color: #FFFFFF;	
+}
+/*********************************************************
+						All Content
+__________________________________________________________
+**********************************************************/
+.content_two_img > img,
+.content_three_img > img,
+.content_four_img > img,
+.content_five_img > img
+ {
+	position: relative;
+	top: 25%;
+}
+
+.content_two_caption *,
+.content_three_caption *,
+.content_four_caption *,
+.content_five_caption *
+{
+	margin-left: 10px;
+}
+/***************************************************************************************************************************	
+													Portrait phones and smaller 
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (max-width: 320px)
+{
+	.content_two_row,
+	.content_three_row,
+	.content_four_row,
+	.content_five_row
+	{
+		height: 50%;
+	}
+
+	.content_col_one,
+	.content_two_three_col,
+	.content_four_five_col 
+	{
+		width: 100%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 50%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{
+		width: 30%;
+		height: 65%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 50%;
+		top: 50%;
+	}
+	
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 12px;
+	}
+}
+@media (min-width: 321px) and (max-width: 480px)
+{
+	/**************************
+			Column One
+	***************************/
+	.content_two_row,
+	.content_three_row,
+	.content_four_row,
+	.content_five_row
+	{
+		height: 50%;
+	}
+	.content_col_one,
+	.content_two_three_col,
+	.content_four_five_col
+	{
+		width: 100%;
+	}
+
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 50%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{	
+		width: 25%;
+		height: 65%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 50%;
+		top: 50%;
+	}
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 12px;
+	}
+}
+
+/***************************************************************************************************************************	 
+												Landscape phones and portrait tablets 
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 481px) and (max-width: 767px) 
+{
+	.content_two_row,
+	.content_three_row,
+	.content_four_row,
+	.content_five_row
+	{
+		height: 50%;
+	}
+	.content_col_one,
+	.content_two_three_col,
+	.content_four_five_col 
+	{
+		width: 100%;
+	}
+	
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 50%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{	
+		width: 20%;
+		height: 65%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 50%;
+		top: 50%;
+	}
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 14px;
+	}
+}
+/***************************************************************************************************************************
+													Portrait tablets and small desktops
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 768px) and (max-width: 991px) 
+{	
+	.content_col_one
+	{
+		width: 100%;
+	}
+	.content_two_row,
+	.content_three_row,
+	.content_four_row,
+	.content_five_row
+	{
+		height: 50%;
+	}
+	.content_two_three_col,
+	.content_four_five_col 
+	{
+		width: 50%;
+	}	
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 50%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{	
+		width: 20%;
+		height: 65%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 50%;
+		top: 50%;
+	}
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 14px;
+	}
+}
+/*************************************************************************************************************************** 
+													Landscape tablets and medium desktops
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 992px) and (max-width: 1199px) 
+{
+	.content_col_one
+	{
+		width: 100%;
+	}
+	.content_two_row,
+	.content_three_row,
+	.content_four_row,
+	.content_five_row
+	{
+		height: 50%;
+	}
+	.content_two_three_col,
+	.content_four_five_col 
+	{
+		width: 50%;
+	}	
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 50%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{	
+		width: 15%;
+		height: 65%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 50%;
+		top: 50%;
+	}
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 14px;
+	}
+}
+/**************************************************************************************************************************** 
+													Large desktops and laptops 
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 1200px) and (max-width: 1500px)
+{
+	.content_col_one
+	{
+		width: 40%;
+		height: 100%;
+	}
+
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 47.5%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{	
+		width: 25%;
+		height: 65%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 52.5%;
+		top: 47.5%;
+	}
+
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 12px;
+	}
+}
+@media (min-width: 1501px) and (max-width: 1700px)
+{
+	.content_col_one
+	{
+		width: 50%;
+		height: 100%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_two_img,
+	.content_three_img,
+	.content_four_img,
+	.content_five_img
+	{
+		height: 50%;
+	}
+	.content_two_img > img,
+	.content_three_img > img,
+	.content_four_img > img,
+	.content_five_img > img
+	{	
+		width: 30;
+		height: 60%;
+	}
+	.content_two_caption,
+	.content_three_caption,
+	.content_four_caption,
+	.content_five_caption
+	{
+		height: 50%;
+		top: 50%;
+	}
+
+	.content_two_caption *, 
+	.content_three_caption *,
+	.content_four_caption * ,
+	.content_five_caption * 
+	{
+		font-size: 14px;
+	}
+}
+@media (min-width: 1701px)
+{
+	.content_col_one
+	{
+		width: 50%;
+		height: 100%;
+	}
+}
+

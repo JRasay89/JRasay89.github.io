@@ -1,0 +1,515 @@
+/******************************************************************************************************************************************************
+_______________________________________________________________________________________________________________________________________________________
+															
+																	Column Two
+_______________________________________________________________________________________________________________________________________________________
+
+********************************************************************************************************************************************************/
+/*************************************************************************************************************************** 
+														All Devices
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+.content_col_two
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+/*********************************************************
+						Content Six
+__________________________________________________________
+**********************************************************/
+.content_six_row 
+{
+	position: relative;
+	width: 100%;
+	height: 30%;
+	margin: 0;
+	padding: 5px;
+}
+.content_six_col
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+/************************************
+		Content Six Thumbnail
+*************************************/
+.content_six_thumbnail
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #87C0E4;
+}
+.content_six_img
+{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_six_caption 
+{
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	background-color: #6EA6CA;
+	color: #FFFFFF;
+}
+/*********************************************************
+						Content Seven
+__________________________________________________________
+**********************************************************/
+.content_seven_row 
+{
+	position: relative;
+	width: 100%;
+	height: 25%;
+	margin: 0;
+	padding: 5px;
+}
+.content_seven_col
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+/************************************
+		Content Seven Thumbnail
+*************************************/
+.content_seven_thumbnail
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #62C28C;
+}
+.content_seven_img
+{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_seven_caption
+{
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #4E9B70;
+	color: #FFFFFF;
+}
+/*********************************************************
+						Content Eight
+__________________________________________________________
+**********************************************************/
+.content_eight_row 
+{
+	position: relative;
+	width: 100%;
+	height: 45%;
+	margin: 0;
+	padding: 5px;
+}
+.content_eight_col
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+/************************************
+		Content Eight Thumbnail
+*************************************/
+.content_eight_thumbnail
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #27275F;
+}
+.content_eight_img
+{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_eight_caption
+{
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #14145A;
+	color: #FFFFFF;	
+}
+/*********************************************************
+						All Content
+__________________________________________________________
+**********************************************************/
+.content_six_img > img,
+.content_seven_img > img,
+.content_eight_img > img
+ {
+	position: relative;
+	top: 25%;
+}
+
+.content_six_caption *,
+.content_seven_caption *,
+.content_eight_caption *
+{
+	margin-left: 10px;
+}
+/***************************************************************************************************************************	
+													Portrait phones and smaller 
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (max-width: 320px)
+{
+	.content_col_two,
+	.content_six_row,
+	.content_seven_row,
+	.content_eight_row
+	{
+		width: 100%;
+	}
+	.content_six_row,
+	.content_seven_row
+	{
+		height: 33%;
+	}
+	.content_eight_row 
+	{
+		height: 34%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 45%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{
+		width: 30%;
+		height: 65%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 55%;
+		top: 45%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 12px;
+	}
+}
+@media (min-width: 321px) and (max-width: 480px)
+{
+	.content_col_two,
+	.content_six_row,
+	.content_seven_row,
+	.content_eight_row 
+	{
+		width: 100%;
+	}
+	.content_six_row,
+	.content_seven_row
+	{
+		height: 33%;
+	}
+	.content_eight_row 
+	{
+		height: 34%;
+	}
+
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 45%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{	
+		width: 25%;
+		height: 70%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 55%;
+		top: 45%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 12px;
+	}
+}
+/***************************************************************************************************************************	 
+												Landscape phones and portrait tablets 
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 481px) and (max-width: 767px) 
+{
+	.content_col_two,
+	.content_six_row,
+	.content_seven_row,
+	.content_eight_row 
+	{
+		width: 100%;
+	}
+	.content_six_row,
+	.content_seven_row
+	{
+		height: 33%;
+	}
+	.content_eight_row 
+	{
+		height: 34%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 45%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{	
+		width: 20%;
+		height: 75%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 55%;
+		top: 45%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 14px;
+	}
+}
+/***************************************************************************************************************************
+														Portrait tablets and small desktops
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+	.content_col_two,
+	.content_six_row,
+	.content_seven_row,
+	.content_eight_row 
+	{
+		width: 100%;
+	}
+	.content_six_row,
+	.content_seven_row
+	{
+		height: 33%;
+	}
+	.content_eight_row 
+	{
+		height: 34%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 45%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{	
+		width: 10%;
+		height: 75%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 55%;
+		top: 45%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 14px;
+	}
+}
+/*************************************************************************************************************************** 
+													Landscape tablets and medium desktops
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 992px) and (max-width: 1199px) 
+{
+	.content_col_two,
+	.content_six_row,
+	.content_seven_row,
+	.content_eight_row 
+	{
+		width: 100%;
+	}
+	.content_six_row,
+	.content_seven_row
+	{
+		height: 33%;
+	}
+	.content_eight_row 
+	{
+		height: 34%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 45%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{	
+		width: 10%;
+		height: 75%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 55%;
+		top: 45%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 14px;
+	}
+}
+/**************************************************************************************************************************** 
+												Large desktops and laptops 
+_____________________________________________________________________________________________________________________________
+*****************************************************************************************************************************/
+@media (min-width: 1200px) and (max-width: 1500px)
+{
+	.content_col_two
+	{
+		width: 30%;
+		height: 100%;
+	}
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 60%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{	
+		width: 30%;
+		height: 65%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 40%;
+		top: 60%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 12px;
+	}
+}
+@media (min-width: 1501px) and (max-width: 1700px)
+{
+	.content_col_two
+	{
+		width: 25%;
+		height: 100%;
+	}
+	
+	/**************************
+			All Content
+	***************************/
+	.content_six_img,
+	.content_seven_img,
+	.content_eight_img
+	{
+		height: 60%;
+	}
+	.content_six_img > img,
+	.content_seven_img > img,
+	.content_eight_img > img
+	{	
+		width: 35%;
+		height: 65%;
+	}
+	.content_six_caption,
+	.content_seven_caption,
+	.content_eight_caption
+	{
+		height: 40%;
+		top: 60%;
+	}
+	.content_six_caption *, 
+	.content_seven_caption *,
+	.content_eight_caption *
+	{
+		font-size: 12px;
+	}
+}
+@media (min-width: 1701px)
+{
+	.content_col_two
+	{
+		width: 25%;
+		height: 100%;
+	}
+}
