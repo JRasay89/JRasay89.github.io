@@ -1,0 +1,15 @@
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+#gameDiv {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	top: 50%;
+	margin-top: -300px;
+
+
+}
