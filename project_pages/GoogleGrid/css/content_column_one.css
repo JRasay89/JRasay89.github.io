@@ -377,7 +377,7 @@ ________________________________________________________________________________
 	.content_four_caption * ,
 	.content_five_caption * 
 	{
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
 @media (min-width: 321px) and (max-width: 480px)
@@ -505,37 +505,43 @@ ________________________________________________________________________________
 		font-size: 14px;
 	}
 }
-/* Landscape phones */
-@media (min-height: 320px) and (max-height: 459px)
+
+/* Landscape Iphones and other phones */
+@media (min-width: 480px) and (max-width: 736px)
 {
-	.content_two_row,
-	.content_three_row,
-	.content_four_row,
-	.content_five_row
+	@media (min-height: 320px) and (max-height: 414px)
 	{
-		height: 100%;
-		width: 50%;
-		float: left;
-	}
-	
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
-	{	
-		width: 27.5%;
-		height: 75%;
-		top: 20%;
-	}
-	
-	.content_two_caption *, 
-	.content_three_caption *,
-	.content_four_caption * ,
-	.content_five_caption * 
-	{
-		font-size: 11px;
+
+		.content_two_row,
+		.content_three_row,
+		.content_four_row,
+		.content_five_row
+		{
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+		
+		.content_two_img > img,
+		.content_three_img > img,
+		.content_four_img > img,
+		.content_five_img > img
+		{	
+			width: 25%;
+			height: 75%;
+			top: 20%;
+		}
+		
+		.content_two_caption *, 
+		.content_three_caption *,
+		.content_four_caption * ,
+		.content_five_caption * 
+		{
+			font-size: 11px;
+		}
 	}
 }
+
 /***************************************************************************************************************************
 													Portrait tablets and small desktops
 _____________________________________________________________________________________________________________________________
@@ -614,9 +620,9 @@ ________________________________________________________________________________
 	}
 }
 /* Protrait Nexus 7 */
-@media (min-width: 603px) and (max-width: 603px)
+@media (min-width: 600px) and (max-width: 603px)
 {
-	@media (min-height: 966px) and (max-height: 966px)
+	@media (min-height: 960px) and (max-height: 966px)
 	{
 		.content_two_three_col,
 		.content_four_five_col
@@ -714,9 +720,9 @@ ________________________________________________________________________________
 	}
 }
 /* Landscape Nexus 7 Tablet */
-@media (min-width: 966px) and (max-width: 966px)
+@media (min-width: 960px) and (max-width: 966px)
 {
-	@media (min-height: 603px) and (max-height: 603px)
+	@media (min-height: 600px) and (max-height: 603px)
 	{
 		/**************************
 				All Content

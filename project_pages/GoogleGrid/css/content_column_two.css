@@ -219,7 +219,7 @@ ________________________________________________________________________________
 	.content_seven_caption *,
 	.content_eight_caption *
 	{
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
 @media (min-width: 321px) and (max-width: 480px)
@@ -336,31 +336,37 @@ ________________________________________________________________________________
 		font-size: 14px;
 	}
 }
-/* Landscape phones */
-@media (min-height: 320px) and (max-height: 459px)
-{	
-	.content_six_row
+/* Landscape Iphones and other phones */
+@media (min-width: 480px) and (max-width: 736px)
+{
+	@media (min-height: 320px) and (max-height: 414px)
 	{
-		height: 50%;	
-	}
-	.content_seven_row,
-	.content_eight_row
-	{
-		height: 50%;
-		width: 50%;
-		float: left;
-	}
-	.content_six_img > img
-	{
-		width: 12.5%;
-		height: 85%;
-		top: 20%;
-	}
-	.content_six_caption *, 
-	.content_seven_caption *,
-	.content_eight_caption *
-	{
-		font-size: 11px;
+		.content_col_two
+		{
+			width: 50%;
+			height: 100%;
+		}
+		.content_six_row,
+		.content_seven_row,
+		.content_eight_row 
+		{
+			height: 60%;
+		}
+
+		.content_six_img > img,
+		.content_seven_img > img,
+		.content_eight_img > img
+		{
+			width: 25%;
+			height: 75%;
+			top: 20%;
+		}
+		.content_six_caption *, 
+		.content_seven_caption *,
+		.content_eight_caption *
+		{
+			font-size: 11px;
+		}
 	}
 }
 /***************************************************************************************************************************
@@ -443,9 +449,9 @@ ________________________________________________________________________________
 }
 
 /* Protrait Nexus 7 */
-@media (min-width: 603px) and (max-width: 603px)
+@media (min-width: 600px) and (max-width: 603px)
 {
-	@media (min-height: 966px) and (max-height: 966px)
+	@media (min-height: 960px) and (max-height: 966px)
 	{
 		.content_col_two
 		{
@@ -542,9 +548,9 @@ ________________________________________________________________________________
 	}
 }
 /* Landscape Nexus 7 Tablet */
-@media (min-width: 966px) and (max-width: 966px)
+@media (min-width: 960px) and (max-width: 966px)
 {
-	@media (min-height: 603px) and (max-height: 603px)
+	@media (min-height: 600px) and (max-height: 603px)
 	{
 		.content_col_two
 		{

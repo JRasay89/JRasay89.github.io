@@ -303,10 +303,10 @@ ________________________________________________________________________________
 }
 
 /* Landscape Nexus 7 Tablet */
-@media (min-width: 966px) and (max-width: 966px)
+@media (min-width: 960px) and (max-width: 966px)
 {
 	
-	@media (min-height: 603px) and (max-height: 603px)
+	@media (min-height: 600px) and (max-height: 603px)
 	{
 		.vertical_nav_wrapper > ul > li
 		{
