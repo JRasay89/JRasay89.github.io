@@ -1,3 +1,4 @@
 # PersonalPortfolioWebsite
+
 My Personal Portfolio  Website <br>
-Language and Technology used: HTML, CSS, JavaScript, JQuery, and Bootstrap
+[Check it out here!](http://jrasay89.github.io/)
