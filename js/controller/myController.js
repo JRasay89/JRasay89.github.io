@@ -43,6 +43,11 @@ app.controller("navCtrl",["$scope", function($scope) {
 			project_name: "Breakout - JS",
 			page_src_main: "my_projects/breakout_js.html",
 			page_src_sub: "../my_projects/breakout_js.html"
+		},
+		{
+			project_name: "TappyPlane - JS",
+			page_src_main: "my_projects/tappy_plane_js.html",
+			page_src_sub: "../my_projects/tappy_plane_js.html"			
 		}
 	];
 }]);

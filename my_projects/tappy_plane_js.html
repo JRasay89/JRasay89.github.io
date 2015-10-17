@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Custom Icons -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- AngularJS library -->
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="../css/myStyle.css">
+		
+	
+		<title>Projects - TappyPlane-JS</title>
+	</head>
+	<body ng-app="myApp">
+		<!-- Navbar -->
+		<nav class="navbar navbar-fixed-top navbar-default" ng-controller="navCtrl">
+			<div class="container">
+				<!-- Navbar Header -->
+				<div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					  </button>				
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li id="home_menu">
+							<a href="../index.html">
+								Home
+							</a>
+						</li>
+						<!-- Coursework Menu -->
+						<li id="coursework_menu">
+							<a href="../courses.html">
+								Coursework
+							</a>
+						</li>
+						<!-- End of Coursework Menu -->
+						<!-- Projects Drop Down Menu-->
+						<li class="dropdown active" id="projects_menu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								Projects <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<!-- Mobile Projects -->
+								<li class="dropdown-header">
+									Mobile Projects
+								</li>
+								<li ng-repeat="project in mobileProjects">
+									<a ng-href="{{project.page_src_sub}}">{{project.project_name}}</a>
+								</li>
+								<!--Game Projects -->
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Game Projects
+								</li>
+								<li ng-repeat="project in gameProjects">
+									<a ng-href="{{project.page_src_sub}}">{{project.project_name}}</a>
+								</li>
+								<!-- Web Projects -->
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">
+									Web Projects
+								</li>
+								<li ng-repeat="project in webProjects">
+									<a ng-href="{{project.page_src_sub}}">{{project.project_name}}</a>
+								</li>
+								<!-- View All -->
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="../projects.html">View All</a>
+								</li>
+							</ul>
+						</li>
+						<!-- End of Projects Drop Down Menu -->
+						<!-- About Me Menu -->
+						<li id="about_me_menu">
+							<a href="../about_me.html">
+								About Me
+							</a>
+						</li>
+						<!-- End of About Me Menu -->
+					</ul>
+					<!-- Contact and Social Navbar -->
+					<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
+						<li>
+							<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
+						</li>
+						<li>
+							<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
+						</li>
+						<li>
+							<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End of Navbar -->
+		<!-- Title -->
+		<div class="jumbotron projects_jumbotron_title">
+			<h1 style="text-align:center">Tappy Plane - JavaScript</h1>
+			<p style="text-align:center">(Language and Technologies: HTML, JavaScript, Phaser Game Framework)</p>
+		</div>
+		<!-- End of Title -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-lg-12">
+					<h2 class="background_title"> Project Description </h2>
+					<p>
+						This version of Tappy Plane was created using HTML, JavaScript, and the Phaser HTML5 game framework.
+						<p>
+							<a href="http://jrasay89.github.io/TappyPlane-JS/"><h4>Try out the game here</h4></a>
+						</p>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-lg-12">
+					<h2 class="gameplay_title"> Gameplay </h2>
+					<p> 
+						It is a simple game where the objective is to avoid as many mountain peaks as possible and beat the best score.
+					</p>
+				</div>
+			</div>
+			<!-- End of Sources/Files -->
+			<div class="row">
+				<div class="col-sm-12 col-lg-12">
+					<h2 class="files_title"> Sources/Files </h2>
+					<div class="row">
+						<div class="col-sm-4 col-lg-4">
+							<a href="https://github.com/JRasay89/TappyPlane-JS">
+								<img src="../images/icons/github_logo_icon.png"/>
+								<h4> Github Repository </h4>
+							</a>
+						</div>
+						<div class="col-sm-2 col-lg-2">
+							<a href="http://phaser.io/">
+								<img src="../images/icons/phaser_logo_icon.png " class="img-responsive"/>
+								<h4> Phaser HTML5 Game Framework </h4>
+							</a>
+						</div >
+						<div class="col-sm-2 col-lg-2">
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<a href="http://opengameart.org/content/tappy-plane">
+								<img src="../images/icons/plane_red_icon.png"/>
+								<h4> Art resource </h4>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Sources/Files -->
+		</div>
+		
+		<!-- Modules -->
+		<script src="../js/myApp.js"></script>
+		<!-- Controllers -->
+		<script src="../js/controller/myController.js"></script>
+	</body>
+</html>

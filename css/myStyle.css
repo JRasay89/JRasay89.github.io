@@ -1,5 +1,5 @@
 /******************************************************************
-								Body
+							Body
 *******************************************************************/
 body, html {
 	height: 100%;
@@ -48,8 +48,8 @@ body{
     background-image: url("../images/background/noisy_net_@2X.png");
 }
 
-.dropdown-menu  > li > a{
-     color: #CCCCCC;
+.navbar-default .navbar-nav > .open > .dropdown-menu  > li > a{
+    color: #CCCCCC;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -59,9 +59,9 @@ body{
     background-color: #AC2832;
 }
 
-.open > .dropdown-menu li > a:hover{
-    background-color: #AC2832;
+.navbar-default .navbar-nav > .open > .dropdown-menu li > a:hover{
     color:#FFFFFF;
+    background-color: #AC2832;
 }
 
 /*******************************
@@ -235,7 +235,7 @@ body{
 }
 
 /******************************************************************
-				Main Projects Page
+					Main Projects Page
 *******************************************************************/
 .projects_jumbotron_title {
 	background:transparent;
