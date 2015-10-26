@@ -40,6 +40,11 @@ app.controller("navCtrl",["$scope", function($scope) {
 			page_src_sub: "../my_projects/google_grid.html"
 		},
 		{
+			project_name: "Web Chat",
+			page_src_main: "my_projects/web_chat.html",
+			page_src_sub: "../my_projects/web_chat.html"
+		},
+		{
 			project_name: "Breakout - JS",
 			page_src_main: "my_projects/breakout_js.html",
 			page_src_sub: "../my_projects/breakout_js.html"
