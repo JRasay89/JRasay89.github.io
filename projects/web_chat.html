@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Projects | Portfolio Website </title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- My JS -->
+
+		<!-- My CSS -->
+		<link rel="stylesheet" href="../css/myStyle.css">
+		<link rel="stylesheet" href="../css/lightbox.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<ul id="custom_nav">
+					<li>
+						<a href="../index.html" class="section_links">Back to main</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid main_content">
+			<div class="container-fluid projects_page">
+				<div class="container projects_page_inner">
+					<h1 class="projects_page_title"> Web Chat </h1>
+					<div class="row">
+						<h3> Description </h3>
+						<div class="col-lg-12">
+							<p>A simple public chat room where users can enter and chat with other users. Users must enter a username
+							   that is not currently being use to enter the chat room.
+							</p>
+							<p>
+								How it works<br>
+								Users must enter a username that is not currently being use to enter the chat room.
+								Usernames are stored in MySQL database, and Ajax is used to call a PHP script that queries a MySQL database
+								to check if the username already exists. <br>
+								In the chatroom, messages that are sent is stored in a text file which is read every second using Ajax. Any
+								new messages found in the text file is appended to the chat message is box.
+							</P>
+						</div>
+					</div>
+					<div class="row">
+						<h3> Screenshots </h3>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 screenshots_col">
+								<a href="../images/projects/web_chat/login_screenshot.png" data-title="Login Page" data-lightbox="screenshots">
+									<figure class="projects_page_thumbnail">
+										<img src="../images/projects/web_chat/login_screenshot.png" class="img-responsive"/>
+										<p> Login Page </p>
+									</figure>
+								</a>							
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 screenshots_col">
+								<a href="../images/projects/web_chat/chat_screenshot.png" data-title="Chat Page" data-lightbox="screenshots">
+									<figure class="projects_page_thumbnail">
+										<img src="../images/projects/web_chat/chat_screenshot.png" class="img-responsive"/>
+										<p> Chat Page </p>
+									</figure>
+								</a>							
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<h3> Technology used </h3>
+						<div class="col-lg-12">
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>JQuery</li>
+								<li>AJAX</li>
+								<li>PHP</li>
+								<li>Bootstrap</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<h3> Sources </h3>
+						<div class="col-lg-12">
+							<p><a href="https://github.com/JRasay89/WebChatRoom">GitHub Repository</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<script src="../js/lightbox.min.js"></script>
+	</body>
+</html>

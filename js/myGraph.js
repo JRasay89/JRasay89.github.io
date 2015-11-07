@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 function createGraph(ctx) {
 	var bars = [];
+	var barColor = "#00FFFF";
 	/****************************************************
 						Data for the bars
 	****************************************************/
@@ -17,61 +18,61 @@ function createGraph(ctx) {
 		y: 0,
 		height: 40,
 		maxWidth: 275,
-		color: "#DC143C"
+		color: barColor
 	});
 	//Add C/C++
 	bars.push({
-		name: "Java",
+		name: "C/C++",
 		x: 100,
 		y: 50,
 		height: 40,
 		maxWidth: 235,
-		color: "#DC143C"
+		color: barColor
 	});	
 	//Add HTML/CSS
 	bars.push({
-		name: "Java",
+		name: "HTML/CSS",
 		x: 100,
 		y: 100,
 		height: 40,
-		maxWidth: 225,
-		color: "#DC143C"
+		maxWidth: 245,
+		color: barColor
 	});	
 	//Add JavaScript
 	bars.push({
-		name: "Java",
+		name: "JavaScript",
 		x: 100,
 		y: 150,
 		height: 40,
-		maxWidth: 225,
-		color: "#DC143C"
+		maxWidth: 245,
+		color: barColor
 	});	
 	//Add PHP
 	bars.push({
-		name: "Java",
+		name: "PHP",
 		x: 100,
 		y: 200,
 		height: 40,
-		maxWidth: 200,
-		color: "#DC143C"
+		maxWidth: 210,
+		color: barColor
 	});	
 	//Add Android
 	bars.push({
-		name: "Java",
+		name: "Android",
 		x: 100,
 		y: 250,
 		height: 40,
 		maxWidth: 225,
-		color: "#DC143C"
+		color: barColor
 	});	
 	//Add SQL/MySQL
 	bars.push({
-		name: "Java",
+		name: "SQL/MySQL",
 		x: 100,
 		y: 300,
 		height: 40,
 		maxWidth: 150,
-		color: "#DC143C"
+		color: barColor
 	});	
 	
 	/****************************************************
@@ -218,13 +219,7 @@ function drawLabels(ctx, labels) {
 /*
 	Draw a rectangle bar on the canvas
  */
-function drawBar(ctx, x, y, width, height, color) {
-	// Turn on shadow
-    ctx.shadowOffsetX = 2;
-    ctx.shadowOffsetY = 2;
-    ctx.shadowBlur = 2;
-    ctx.shadowColor = "#999";
-	
+function drawBar(ctx, x, y, width, height, color) {	
 	ctx.fillStyle = color;
 	ctx.fillRect(x, y, width, height);
 	
@@ -249,6 +244,7 @@ function drawLine(ctx, startX, startY, endX, endY) {
 	Draw a line dash on the canvas
  */
 function drawLineDash(ctx, startX, startY, endX, endY, segments) {
+	ctx.strokeStyle = '#fff';
 	ctx.setLineDash(segments);
 	ctx.beginPath();
 	ctx.moveTo(startX, startY);
@@ -260,8 +256,8 @@ function drawLineDash(ctx, startX, startY, endX, endY, segments) {
 	Draw a text on the canvas
  */
 function drawText(ctx, text, x, y) {
-	ctx.font = "bold 15px Arial";
-	ctx.fillStyle = "#000000";
+	ctx.font = "16px Times New Roman";
+	ctx.fillStyle = "#fff";
 	ctx.fillText(text, x, y);
 }
 
@@ -277,7 +273,7 @@ function isElemVisible(elem) {
 	
 	var elemTop = $elem.offset().top; 
 	//var elemMid = elemTop + $elem.height()/2;
-	//var elemBottom = elemTop + $elem.height();
+	var elemBottom = elemTop + $elem.height();
 	
 	//console.log("Window Height: " + $(window).height());
 	//console.log("ViewTop: " + viewTop);
@@ -287,5 +283,11 @@ function isElemVisible(elem) {
 	//console.log("Elem Bottom: " + elemBottom);
 	
 	//if elem is visible midway
-	return viewBottom >= elemTop;
+	if (viewBottom >= elemTop && viewTop <= elemBottom) {
+		return true;
+	}
+	else {
+		return false;
+	}
+	//return viewBottom >= elemTop;
 }

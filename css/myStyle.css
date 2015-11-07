@@ -1,390 +1,382 @@
-/******************************************************************
-							Body
-*******************************************************************/
-body, html {
-	height: 100%;
-	width:	100%;
-}
-body{
-	background-image: url("../images/background/blizzard_@2X.png");
-}
-
-/******************************************************************
-								Navbar
-*******************************************************************/
-.navbar {
-	border-radius: 0px;
-	background-image: url("../images/background/noisy_net_@2X.png");
-	border-color: #919191;
-	border-top: none;
-	
-}
-.navbar-nav {
-	padding: 12px 0;
-}
-
-.navbar .navbar-nav > li > a {
-	color: #CCCCCC;
-	font-size: 15px;
-}
-
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus {
-    color: #FFFFFF;
-    background-color: #AC2832;
-}
-
-.navbar .navbar-nav > .active > a,
-.navbar .navbar-nav > .active > a:hover,
-.navbar .navbar-nav > .active > a:focus {
-    color: #FFFFFF;
-    background-color: #AC2832;
-}
-
-/*******************************
-	Dropdown Menu style
-********************************/
-.navbar-default .dropdown-menu {
-    background-image: url("../images/background/noisy_net_@2X.png");
-}
-
-.navbar-default .navbar-nav > .open > .dropdown-menu  > li > a{
-    color: #CCCCCC;
-}
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:active,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #FFFFFF;
-    background-color: #AC2832;
-}
-
-.navbar-default .navbar-nav > .open > .dropdown-menu li > a:hover{
-    color:#FFFFFF;
-    background-color: #AC2832;
-}
-
-/*******************************
-	Navbar toggle style
-********************************/
-.navbar-default .navbar-toggle {
-  border-color: #919191;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #AC2832;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFFFFF;
-}
-/************************************************************************
-							Index Page
-*************************************************************************/
-#index_jumbotron_title {
-	margin-top: 100px;
-	color: #191919;
-	background:transparent;
+/***************************************************
+====================All Style====================
+****************************************************/
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 75%;
 	
 }
 
-.main_button {
-	position:relative;
-	border-radius: 0px;
-	background-color: #AC2832;
-	color: #FFFFFF;
-}
-
-.main_button:hover,
-.main_button:focus,
-.main_button:active {
-	background-color: #AC2832;
-	color: #FFFFFF;
-}
-
-.main_button:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height:2px;
-	bottom: 0;
-	left: 0;
-	background-color: #00B2B2;
-	visibility: hidden;
-	-moz-transform: scaleX(0); /*Mozilla*/
-	-webkit-transform: scaleX(0); /*Chrome*/
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out 0s;
-	
-}
-
-.main_button:hover:before {
-	visibility: visible;
-	-moz-transform: scaleX(1); /*Mozilla*/
-	-webkit-transform: scaleX(1); /*Chrome*/
-	transform: scaleX(1);
-}
-
-
-
-/************************************************************************
-							Main Courses Page
-*************************************************************************/
-#main_courses_jumbotron_title {
-	background:transparent;
-	padding: 100px;
-	margin-bottom: -100px;
-	color: #191919;
-}
-
-.course_list_row {
-	display: flex;
-	color: #FFFFFF;
-	border-color: #919191;
-	border-width: 1px;
-	border-style: none none solid none;
-}
-
-.indiv_course_div {
-	flex: 1;
-	margin: 10px;
-    background-color: #B01030;
-	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
-	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
-    box-shadow: 10px 10px 5px #888888;
+.main_title {
+	margin-bottom: 50px;
+	font-size: 4.5em;
 
 }
-.indiv_course_div * {
-	clear: both;
+/***************************************************
+====================Navbar Style====================
+****************************************************/
+
+.navbar-default {
+	height: 80px;
+	border-radius: 0;
+	background-color: #134A67;
+	border: none;
+}
+#custom_nav {
+	font-size: 2.25em;
+	list-style: none;
+	padding: 0;
+}
+#custom_nav li {
+	display: inline-block;
+	margin-right: 25px;
+	line-height: 80px;
 }
 
-.course_description > a {
-	color: #4DD2FF;
+#custom_nav .section_links {
+	text-decoration:none;
+	transition: color 0.25s linear;
 }
-.course_description > a:hover ,
-.course_description > a:active {
-	color: #DBF6FF;
+#custom_nav .section_links:hover,
+#custom_nav .section_links:focus {
+    color: #FFF;
 }
-
-/*******************************
-		Course Ribbon Title
-********************************/
-.course_number_ribbon {
-	position: relative;
-	background: #E34062;
-	margin: 10px 0 10px;
-	margin-left: -26px;
-	padding: 5px 10px;
-	float: left;
-	border: 1px solid rgba(0,0,0,.3);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Mozilla*/
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Chrome*/
-	box-shadow: 0 1px 3px rgba(0,0,0,.2);
-
-}
-.course_number {
-	margin: 0 12px;
-}
-
-.course_number_ribbon::before {
-	display:block;
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	bottom: -15px;
-	left: 0;
-	content: "";
-	border-bottom: 15px solid transparent;
-	border-right: 11px solid #A42E46;
-}
-/******************************************************************
-							Courses Page
-*******************************************************************/
-#courses_jumbotron_title {
-	background: transparent;
-	padding: 100px;
-	margin-bottom: -100px;
-	color: #191919;
-	
-}
-
-.description_title,
-.experience_gained_title,
-.textbooks_title,
-.programming_assignments_title {
-	text-align: center;
-	color: #FFFFFF;
-	margin-bottom: 25px;
-	border-color: #919191;
-	border-width: 1px;
-	border-style: solid;
-	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
-	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
-	box-shadow: 10px 10px 5px #888888;
-    background-color: #CC3C59;
-}
-.courses_header {
-	border-color: #919191;
-	border-width: 1px;
-	border-style: none none solid none;
-}
-
-.assignments_row {
-	margin-bottom: 20px;
-}
-
-/******************************************************************
-					Main Projects Page
-*******************************************************************/
-.projects_jumbotron_title {
-	background:transparent;
-	padding: 100px;
-	margin-bottom: -100px;
-	color: #191919;
-}
-
-.projects_jumbotron_title * {
-	text-align: center;
-}
-
-.projects_row {
-	display: flex;
+.current_active {
 	color: #FFF;
-	border-color: #919191;
-	border-width: 1px;
-	border-style: none none solid none;
 }
-
-.indiv_projects_div {
+/*********************************************************
+====================Main Content Style====================
+**********************************************************/
+.main_content {
 	position: relative;
-	flex: 1;
-	margin: 0 20px;
-    background-color: #2E8B57;
-	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
-	-webkit-box-shadow: 10px 10px 5px #888888; /*chrome*/
-    box-shadow: 10px 10px 5px #888888;
-
+	top: 80px;
+	padding: 0;
 }
-
-.indiv_projects_div * {
-	clear: both;
-}
-
-.project_description > a {
-	color: #4DD2FF;
-}
-.project_description > a:hover ,
-.project_description > a:active {
-	color: #DBF6FF;
-}
-/*******************************
-		Project Ribbon Title
-********************************/
-.project_title_ribbon {
-	text-align: center;
+/*****************************************************
+====================About Me Style====================
+******************************************************/
+#about_me {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	color: #04334a;
 	position: relative;
-	margin: 10px -15px;
-	background: #00C87B;
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Mozilla*/
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Chrome*/
-	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	background-color: #EEEEEE;
+}
+#about_me p {
+	font-size: 2.5em;
+}
+#profile_picture .img-responsive {
+	margin: 0 auto;
+}
+/*******************************************************
+====================Experience Style====================
+********************************************************/
+#experience {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	color: #fff;
+	background-color: #207EAF;
+}
+#experience p,
+#experience li {
+	font-size: 2em;
+}
+.school_row a {
+	color: #1EB4E8;
 }
 
-.project_title_ribbon:before {
-	display: block;
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	content: "";
-	border-bottom: 12px solid transparent;
-	border-right: 16px solid #33735A;
-	
-}
-
-.project_title_ribbon:after {
-	display:block;
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	bottom: -12px;
-	right: 0;
-	content: "";
-	border-bottom: 12px solid transparent;
-	border-left: 16px solid #33735A;
-}
-/******************************************************************
-					Projects Page
-*******************************************************************/
-.background_title,
-.demo_video_title,
-.screen_shots_title,
-.gameplay_title,
-.files_title {
-	text-align: center;
-	color: #FFFFFF;
-	margin-bottom: 25px;
-	border-color: #919191;
-	border-width: 1px;
-	border-style: solid;
-	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
-	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
-	box-shadow: 10px 10px 5px #888888;
-    background-color: #00C87B;
-}
-
-.projects_video > iframe {
-	align: middle;
-}
-/******************************************************************
-					About Me Page
-*******************************************************************/
-.aboutme_jumbotron_title {
-	background:transparent;
-	padding: 100px;
-	margin-bottom: -100px;
-	color: #191919;
-}
-.aboutme_jumbotron_title * {
+.school_col {
 	text-align: center;
 }
-
-.aboutme_description {
-	
-	font-size: 20px;
-	color: #191919;
+.school_col .img-responsive {
+	margin: 0 auto;
 }
-.aboutme_title {
-	color: #E6E6E6;
+.experience_section_title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #04334a;
+	opacity: .95;
+	margin-bottom: 30px;
 	text-align: center;
-}
-.aboutme_education, 
-.aboutme_courses, 
-.aboutme_tech_summary {
-	margin: auto;
-	border-color: #919191;
-	border-width: 1px;
-	border-style: solid;
-	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
-	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
-	box-shadow: 10px 10px 5px #888888;
-    background-color: #5077BE;
-}
-
-.aboutme_education_row{
-	margin-top: 25px;
-	text-align: center;
-}
-
-.aboutme_courses_row, 
-.aboutme_graph_row, 
-.aboutme_othertech_row  {
-	margin-top: 25px;
+	font-size: 3.5em;
 }
 
 #graph {
-  width: 100%;
-  height: auto;
+	width: 100%; 
+	height: auto;
+}
+/*****************************************************
+====================Projects Style====================
+******************************************************/
+#projects {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	color: #fff;
+	background-color: #04334a;
+}
+#projects_inner > .row {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+
+.projects_thumbnail {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+.projects_thumbnail > img {
+	width: 100%;
+	height: 100%;
+}
+
+.projects_thumbnail > figcaption {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	background-color: #04334a;
+	color: #fff;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+
+}
+.projects_thumbnail > figcaption > h3 {
+	text-align: center;
+	line-height: 35px;
+}
+.projects_thumbnail:hover figcaption {
+	opacity: .85;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+#projects h3 {
+	font-size: 2.5em;
+}
+/*********************************************
+====================Footer====================
+**********************************************/
+#footer_content {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	top: 80px;
+	padding: 20px 0;
+	background-color: #134A67 ;
+}
+
+#footer_inner div {
+	text-align: center;	
+}
+
+/**************************************************
+--------------------Icons Style--------------------
+***************************************************/
+#custom_list {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+#custom_list li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.custom_icon {
+	font-size: 3em;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-envelope  {
+	color: #FFF;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+.fa-github {	
+	background-color:#070709;	
+}
+.fa-linkedin {
+	background-color:#0085AE;
+}
+.fa-envelope {
+	background-color: #CF3D2E;	
+}
+
+/**************************************************
+-------------------Tooltip Style-------------------
+***************************************************/
+.tooltip_style + .tooltip {
+	margin-top: -20px;
+}
+/* Linkedin */
+.tooltip_style.linkedin + .tooltip > .tooltip-inner {
+	background-color: #0085AE;
+}
+.tooltip_style.linkedin + .tooltip.top > .tooltip-arrow {
+	border-top: 5px solid #0085AE;
+}
+/* Github */
+.tooltip_style.github + .tooltip > .tooltip-inner {
+	background-color: #070709;
+}
+.tooltip_style.github + .tooltip.top > .tooltip-arrow {
+	border-top: 5px solid #070709;
+}
+/* Email */
+.tooltip_style.envelope + .tooltip > .tooltip-inner {
+	background-color: #CF3D2E;
+}
+.tooltip_style.envelope + .tooltip.top> .tooltip-arrow {
+	border-top: 5px solid #CF3D2E;
+}
+/***********************************************************
+====================Projects Page Style====================
+************************************************************/
+.projects_page {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-color: #04334a;
+	color: #fff;
+}
+
+.projects_page h1 {
+	font-size: 4.5em;
+}
+.projects_page h3 {
+	font-size: 3.5em;
+}
+.projects_page p,
+.projects_page li {
+	font-size: 2em;
+}
+
+/******************************************
+----------Projects Page Thumbnail----------
+*******************************************/
+.projects_page_title {
+	text-align: center;
+}
+.screenshots_col {
+	margin: 20px 0;
+}
+.screenshots_col a {
+	text-align: center;
+	text-decoration: none;
+}
+.projects_page_thumbnail {
+	width: 100%;
+	height: 275px;
+}
+.projects_page_thumbnail img {
+	width: 100%;
+	height: 100%;
+}
+/****************************************************
+====================Media Queries====================
+*****************************************************/
+@media screen and (max-width: 991px) {
+ 	.projects_thumbnail {
+		height: 300px;
+	}
+	
+	/******************************************
+	----------Projects Page Thumbnail----------
+	*******************************************/
+	.projects_page_thumbnail {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 70%;
+	}
+	.about_me_description {
+		margin-top: 20px;
+	}
+	#projects_inner > .row {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.projects_thumbnail_wrapper {
+		margin-bottom: 50px;
+	}
+	
+ 	.projects_thumbnail {
+		height: 400px;
+	}
+	
+	/******************************************
+	----------Projects Page Thumbnail----------
+	*******************************************/
+	.screenshots_col {
+		margin: 20px 0;
+	}
+	.projects_page_thumbnail {
+		height: 400px;
+	}
+
+}
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 65%;
+	}
+	#projects_inner > .row {
+		margin-top: 0;
+		margin-bottom: 0;
+	}	
+	.projects_thumbnail_wrapper {
+		margin-bottom: 50px;
+	}
+	.projects_thumbnail {
+		height: 250px;
+	}
+	
+	/******************************************
+	----------Projects Page Thumbnail----------
+	*******************************************/
+	.screenshots_col {
+		margin: 20px 0;
+	}
+	.projects_page_thumbnail {
+		height: 300px;
+	}
+}
+@media screen and (max-width: 320px) {
+	body {
+		font-size: 55%;
+	}
+
+	#projects_inner > .row {
+		margin-top: 0;
+		margin-bottom: 0;
+	}	
+	.projects_thumbnail_wrapper {
+		margin-bottom: 50px;
+	}
+	.projects_thumbnail {
+		height: 150px;
+	}
+	
+	.projects_thumbnail > figcaption {
+		height: 40px;
+	}
+	.projects_thumbnail > figcaption > h3 {
+		line-height: 10px;
+	}
+	
+	/******************************************
+	----------Projects Page Thumbnail----------
+	*******************************************/
+	.screenshots_col {
+		margin: 20px 0;
+	}
+	.projects_page_thumbnail {
+		height: 200px;
+	}
 }

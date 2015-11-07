@@ -1,137 +1,234 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>		
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Home </title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 		<!-- Latest compiled JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<!-- Custom Icons -->
+		<!-- Font Awesome -->
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-		<!-- AngularJS library -->
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-		
+		<!-- My JS -->
+		<script src="js/tooltip.js"></script>
+		<script src="js/myGraph.js"></script>
+		<script src="js/scrollTo.js"></script>
 		<!-- My CSS -->
 		<link rel="stylesheet" href="css/myStyle.css">
-		
-		<title>Home page</title>
 	</head>
-	
-	<body ng-app="myApp">
-		<!-- Navbar -->
-		<nav class="navbar navbar-fixed-top navbar-default" ng-controller="navCtrl">
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
-				<!-- Navbar Header -->
-				<div class="navbar-header">
-					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
-					  </button>				
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active" id="home_menu">
-							<a href="index.html">
-								Home
-							</a>
-						</li>
-						<!-- Coursework Menu -->
-						<li id="coursework_menu">
-							<a href="courses.html">
-								Coursework
-							</a>
-						</li>
-						<!-- End of Coursework Menu -->
-						<!-- Projects Drop Down Menu-->
-						<li class="dropdown" id="projects_menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-								Projects <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<!-- Mobile Projects -->
-								<li class="dropdown-header">
-									Mobile Projects
-								</li>
-								<li ng-repeat="project in mobileProjects">
-									<a ng-href="{{project.page_src_main}}">{{project.project_name}}</a>
-								</li>
-								<!--Game Projects -->
-								<li role="separator" class="divider"></li>
-								<li class="dropdown-header">
-									Game Projects
-								</li>
-								<li ng-repeat="project in gameProjects">
-									<a ng-href="{{project.page_src_main}}">{{project.project_name}}</a>
-								</li>
-								<!-- Web Projects -->
-								<li role="separator" class="divider"></li>
-								<li class="dropdown-header">
-									Web Projects
-								</li>
-								<li ng-repeat="project in webProjects">
-									<a ng-href="{{project.page_src_main}}">{{project.project_name}}</a>
-								</li>
-								<!-- View All -->
-								<li role="separator" class="divider"></li>
-								<li>
-									<a href="projects.html">View All</a>
-								</li>
-							</ul>
-						</li>
-						<!-- End of Projects Drop Down Menu -->
-						<!-- About Me Menu -->
-						<li id="about_me_menu">
-							<a href="about_me.html">
-								About Me
-							</a>
-						</li>
-						<!-- End of About Me Menu -->
-					</ul>
-					<!-- Contact and Social Navbar -->
-					<ul class="nav navbar-nav navbar-right" id="contact_social_nav">
-						<li>
-							<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3"><i class="fa fa-lg fa-linkedin"></i></a>
-						</li>
-						<li>
-							<a href="https://github.com/JRasay89?tab=repositories"><i class="fa fa-lg fa-github"></i></a>
-						</li>
-						<li>
-							<a href="mailto:jrasay89@gmail.com"><i class="fa fa-envelope"></i> jrasay89@gmail.com</a>
-						</li>
-					</ul>
-				</div>
+				<ul id="custom_nav">
+					<li>
+						<a href="#about_me" class="section_links" id="about_me_link">About Me</a>
+					</li>
+					<li>
+						<a href="#experience" class="section_links" id="experience_link">Experience</a>
+					</li>
+					<li>
+						<a href="#projects" class="section_links" id="projects_link">Projects</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
-		<!-- End of Navbar -->
-		<!-- Main content -->
-		<div class="container">
-			<div class="jumbotron" id="index_jumbotron_title">
-				<h1 style="text-align:center"> Welcome to </h1>
-				<h1 style="text-align:center"> John Benedick Rasay's Personal Website.</h1>
-				<p style="text-align:center"> 
-					This site presents my coursework assignments and projects that I worked on as a
-					computer science student and also during my free time.
-				<p>
-				<p style="text-align:center">
-					<a class="btn btn-custom btn-lg main_button" href="about_me.html" role="button">Learn more about me</a>
-				</p>
-				<p style="text-align:center">
-					<a class="btn btn-custom btn-lg main_button" href="courses.html" role="button">View coursework</a>
-				</p>
-				<p style="text-align:center">
-					<a class="btn btn-custom btn-lg main_button" href="projects.html" role="button">View projects</a>
-				</p>
+		<div class="container-fluid main_content">
+			<div class="container-fluid" id="about_me" >
+				<div class="container" id="about_me_inner">
+					<h1 class="main_title"> About Me </h1>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="profile_picture">
+							<img src="images/myProfilePicture.jpg" class="img-responsive"/>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-4 col-lg-8 about_me_description">
+							<p>
+								 I graduated from the University of Hawaii in May 2014 with a Bachelors of Science degree in Computer Science. 
+								 My education primarily consisted of courses that focused on the Java Programming Language, but I have also taken courses 
+								 that gave me experience using other languages and technologies such as C, C++, JavaScript, PHP, HTML and CSS. 
+								 I enjoy programming because you're always learning and seeing something that you've worked on being used by other people
+								 is a great feeling. I really enjoy the visual art part of programming and so I'm hoping to become
+								 a Front-End Developer/Web Developer.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		<!-- End of main content -->
+			<div class="container-fluid" id="experience">
+				<div class="container" id="experience_inner">
+					<h1 class="main_title"> Experience </h1>
+					<div class="row school_row">
+						<h3 class="experience_section_title"> Education </h3>
+						<div class="col-xs-12 col-sm-4 col-sm-4 col-lg-4 school_col">
+							<p><img src="images/school_logo/manoa_logo.png" alt="logo" class="img-responsive" /></p>
+							<p><a href="http://manoa.hawaii.edu/">University Of Hawaii</a></p>
+							<p>
+								<a href="https://www.google.com/maps/place/University+of+Hawaii+at+Manoa/@21.299816,-157.817579,17z/data=!3m1!4b1!4m2!3m1!1s0x7c006d989580d855:0xac63f2de838ed2f4">
+									Honolulu, Hi
+								</a>
+							</p>
+							<p>August 2011 - May 2014</p>
+							<p>Bachelors of Science in Computer Science</p>
+							<p>Overall GPA 3.52 / 4.0</p>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-sm-4 col-lg-4 school_col">
+							<p><img src="images/school_logo/hcc_logo.png" alt="logo" class="img-responsive"/></p>
+							<p><a href="http://www.honolulu.hawaii.edu/">Honolulu Community College</a></p>
+							<p><a href="https://www.google.com/maps/place/Honolulu+Community+College/@21.3206563,-157.869666,17z/data=!3m1!4b1!4m2!3m1!1s0x7c006e65ff93ebcf:0xab8780e78ac95124">Honolulu, Hi</a></p>
+							<p>August 2007 - May 2011</p>
+							<p>Associates of Science in Computing, Electronics & Networking Technology</p>
+							<p>Overall GPA 3.32 / 4.0</p>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-sm-4 col-lg-4 school_col">
+							<p><img src="images/school_logo/fhs_logo.png" alt="logo" class="img-responsive"/></p>
+							<p><a href="http://farringtonhighschool.org/">Wallace Rider Farrington High School</a></p>
+							<p><a href="https://www.google.com/maps/place/Governor+Wallace+Rider+Farrington+High+School/@21.3306993,-157.8722547,17z/data=!3m1!4b1!4m2!3m1!1s0x7c006e621433d5c9:0x548831dfe4a5db77">Honolulu, Hi</a></p>
+							<p>August 2003 - June 2007</p>
+						</div>					
+					</div>
+					<div class="row" id="coursework_row">
+						<h3 class="experience_section_title"> Coursework </h3>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<ul>
+								<li>Intro to Computer Science I - Java</li>
+								<li>Intro to Comp Science II - Java</li>
+								<li>Program Structure - C & C++</li>
+								<li>Data Storage & Retrieval</li>
+								<li>Algorithms</li>
+								<li>Programming Language Theory</li>
+								<li>Software Engineering I</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<ul>
+								<li>Software Engineering II</li>
+								<li>Operating Systems</li>
+								<li>Design for Mobile Devices</li>
+								<li>Introduction to Scripting</li>
+								<li>Introduction to Programming for the Web</li>
+								<li>Web Design and Management</li>
+								<li>Data Networks</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<h3 class="experience_section_title"> Technology Summary </h3>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<h4 class="experience_section_title"> Programming Languages/Database </h4>
+							<canvas id="graph" width="525" height="450">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<h4 class="experience_section_title"> Other software tools </h4>
+							<ul>
+								<li> JQuery, Ajax, Bootstrap</li>
+								<li> Eclipse IDE, Visual Studio, Android Studio </li>
+								<li> Microsoft Word, PowerPoint, Excel </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Projects -->
+			<div class="container-fluid" id="projects">
+				<div class="container" id="projects_inner">
+					<h1 class="main_title"> Projects </h1>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 projects_thumbnail_wrapper">
+							<a href="projects/portfolio_website.html">
+								<figure class="projects_thumbnail">
+									<img src="images/projects/portfolio_website/home_page.png"/>
+									<figcaption>
+										<h3> Portfolio Website </h3>
+									</figcaption>
+								</figure>
+							</a>
+						</div>		
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 projects_thumbnail_wrapper">
+							<a href="projects/web_forum.html">
+								<figure class="projects_thumbnail">
+									<img src="images/projects/web_forum/Main_Page.png"/>
+									<figcaption>
+										<h3> ICS 415: Web Forum Project </h3>
+									</figcaption>
+								</figure>
+							</a>
+						</div>					
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 projects_thumbnail_wrapper">
+							<a href="projects/web_chat.html">
+								<figure class="projects_thumbnail">
+									<img src="images/projects/web_chat/chat_screenshot.png"/>
+									<figcaption>
+										<h3> Web Chat </h3>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 projects_thumbnail_wrapper">
+							<a href="projects/google_grid.html">
+								<figure class="projects_thumbnail">
+									<img src="images/projects/google_grid_design/google_grid_desktop.png"/>
+									<figcaption>
+										<h3> Google Grid </h3>
+									</figcaption>
+								</figure>
+							</a>
+						</div>		
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 projects_thumbnail_wrapper">
+							<a href="projects/breakout_js.html">
+								<figure class="projects_thumbnail">						
+									<img src="images/projects/breakout_js/breakout_1.png"/>
+									<figcaption>
+										<h3> Breakout - JavaScript </h3>
+									</figcaption>
+								</figure>
+							</a>									
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 projects_thumbnail_wrapper">
+							<a href="projects/tappy_plane_js.html">
+								<figure class="projects_thumbnail">								
+										<img src="images/projects/tappyplane_js/tappyplane_1.png"/>
+									<figcaption>
+										<h3> Tappy Plane - JavaScript </h3>
+									</figcaption>
+								</figure>
+							</a>									
+						</div>								
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		
-		<!-- Modules -->
-		<script src="js/myApp.js"></script>
-		<!-- Controllers -->
-		<script src="js/controller/myController.js"></script>
+		<!-- End of main content -->
+		<!-- Footer -->
+		<footer class="container-fluid" id="footer_content">
+			<nav id="footer_inner">
+				<ul id="custom_list">
+					<li>
+						<a href="https://www.linkedin.com/pub/john-benedick-rasay/a4/2b7/7a3" class="tooltip_style linkedin custom_icon" data-toggle="tooltip" data-placement="top" title="Linkedin">
+							<i class="fa fa-lg fa-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/JRasay89?tab=repositories" class="tooltip_style github custom_icon" data-toggle="tooltip" data-placement="top" title="Github">
+							<i class="fa fa-lg fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:jrasay89@gmail.com" class="tooltip_style envelope custom_icon" data-toggle="tooltip" data-placement="top" title="jrasay89@gmail.com">
+							<i class="fa fa-lg fa-envelope"></i>
+						</a>
+					</li>
+				</ul>			
+			</nav>
+		</footer>
+		<!-- End of footer -->
 	</body>
 </html>
