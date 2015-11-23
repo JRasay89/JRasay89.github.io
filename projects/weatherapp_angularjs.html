@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> Web Chat | Projects </title>
+		<title> WeatherApp AngularJS | Projects </title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -35,43 +35,32 @@
 		<div class="container-fluid main_content">
 			<div class="container-fluid projects_page">
 				<div class="container projects_page_inner">
-					<h1 class="projects_page_title"> Web Chat </h1>
+					<h1 class="projects_page_title"> WeatherApp - AngularJS</h1>
 					<!-- Description -->
 					<div class="row">
 						<h3> Description </h3>
 						<div class="col-lg-12">
-							<p>A simple public chat room where users can enter and chat with other users. Users must enter a username
-							   that is not currently being use to enter the chat room.
+							<p>
+								A simple weather app using AngularJS and OpenWeatherMap API.
+								The app takes in zipcodes or location names and calls the OpenWeatherMap API to 
+								return a JSON that contains weather informations for the given location.
 							</p>
 							<p>
-								How it works<br>
-								Users must enter a username that is not currently being use to enter the chat room.
-								Usernames are stored in MySQL database, and Ajax is used to call a PHP script that queries a MySQL database
-								to check if the username already exists. <br>
-								In the chatroom, messages that are sent is stored in a text file which is read every second using Ajax. Any
-								new messages found in the text file is appended to the chat message is box.
-							</P>
+								<a href="http://jrasay89.github.io/WeatherApp/">Try out app here</a>
+							</p>
 						</div>
 					</div>
 					<div class="row">
 						<h3> Screenshots </h3>
 						<div class="row">
 							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 screenshots_col">
-								<a href="../images/projects/web_chat/login_screenshot.png" data-title="Login Page" data-lightbox="screenshots">
+								<a href="../images/projects/weatherapp_angularjs/weatherapp_screenshot_01.png" data-title="WeatherApp" data-lightbox="screenshots">
 									<figure class="projects_page_thumbnail">
-										<img src="../images/projects/web_chat/login_screenshot.png" class="img-responsive"/>
-										<p> Login Page </p>
+										<img src="../images/projects/weatherapp_angularjs/weatherapp_screenshot_01.png" class="img-responsive"/>
+										<p>WeatherApp</p>
 									</figure>
-								</a>							
+								</a>	
 							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 screenshots_col">
-								<a href="../images/projects/web_chat/chat_screenshot.png" data-title="Chat Page" data-lightbox="screenshots">
-									<figure class="projects_page_thumbnail">
-										<img src="../images/projects/web_chat/chat_screenshot.png" class="img-responsive"/>
-										<p> Chat Page </p>
-									</figure>
-								</a>							
-							</div>							
 						</div>
 					</div>
 					<div class="row">
@@ -80,19 +69,18 @@
 							<ul>
 								<li>HTML</li>
 								<li>CSS</li>
-								<li>JavaScript</li>
+								<li>AngularJS</li>
 								<li>JQuery</li>
-								<li>AJAX</li>
-								<li>PHP</li>
-								<li>MySQL</li>
-								<li>Bootstrap</li>
+								<li>BootStrap</li>
+								<li>OpenWeatherMap API</li>
+								<li>Google Geolocation API</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<h3> Sources </h3>
 						<div class="col-lg-12">
-							<p><a href="https://github.com/JRasay89/WebChatRoom">GitHub Repository</a></p>
+							<p><a href="https://github.com/JRasay89/WeatherApp">GitHub Repository</a></p>
 						</div>
 					</div>
 				</div>
