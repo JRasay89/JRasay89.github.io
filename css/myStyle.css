@@ -120,15 +120,17 @@ h1.main_title {
 	background-color: #04334a;
 }
 #projects_inner > .row {
-	margin-top: 75px;
-	margin-bottom: 75px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
-
-
+.projects_type_title {
+	font-size: 1.75em;
+	text-align: center;
+}
 .projects_thumbnail {
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	overflow: hidden;
 }
 
@@ -158,9 +160,8 @@ h1.main_title {
 	transform: translateY(0px);
 	transition: transform 0.4s, opacity 0.1s;
 }
-
 #projects h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 /*********************************************
 ====================Footer====================
@@ -289,16 +290,15 @@ h1.main_title {
 *****************************************************/
 @media screen and (max-width: 991px) {
 	body {
-		font-size: 90%;
+		font-size: 75%;
 	}
 
 	/****************************
 	 ==========Projects==========
 	*****************************/
  	.projects_thumbnail {
-		height: 300px;
+		height: 150px;
 	}
-	
 	/*******************************************
 	===========Projects Page Thumbnail==========
 	********************************************/
@@ -306,7 +306,6 @@ h1.main_title {
 		height: 200px;
 	}
 }
-
 @media screen and (max-width: 767px) {
 	body {
 		font-size: 85%;
@@ -341,7 +340,6 @@ h1.main_title {
 	.projects_page_thumbnail {
 		height: 400px;
 	}
-
 }
 @media screen and (max-width: 480px) {
 	body {
@@ -393,8 +391,7 @@ h1.main_title {
 @media screen and (max-width: 320px) {
 	body {
 		font-size: 70%;
-	}
-	
+	}	
 	/****************************
 	 ==========Projects==========
 	*****************************/
